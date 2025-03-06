@@ -1,0 +1,368 @@
+﻿/*Стили для кнопок перехода на страницу регистрации*/
+.aCompetitionReg {
+    position: relative;display: block;
+    width: 400px;
+    margin: 0 auto 10px auto;padding: 15px 0px 15px 0px;
+
+    font-family: Georgia; font-size: 22px; color: #ffffff;
+    -ms-text-shadow: 0px 1px 1px #616161;text-shadow: 0px 1px 1px #616161;
+    text-decoration: none;text-align: center;
+
+    background: #6bba70;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzZiYmE3MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ0JSIgc3RvcC1jb2xvcj0iIzYwYTU2OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2YWI3NzMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #6bba70 0%, #60a568 44%, #6ab773 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6bba70), color-stop(44%,#60a568), color-stop(100%,#6ab773));
+    background: -webkit-linear-gradient(top,  #6bba70 0%,#60a568 44%,#6ab773 100%);
+    background: -o-linear-gradient(top,  #6bba70 0%,#60a568 44%,#6ab773 100%);
+    background: -ms-linear-gradient(top,  #6bba70 0%,#60a568 44%,#6ab773 100%);
+    background: linear-gradient(to bottom,  #6bba70 0%,#60a568 44%,#6ab773 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6bba70', endColorstr='#6ab773',GradientType=0 );
+
+    border: 1px #ffffff solid;
+    -ms-border-radius: 10px;border-radius: 10px;
+
+    -webkit-box-shadow: 1px 1px 4px 0px #000000;-webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 4px 0px #000000;-moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
+    -o-box-shadow: 1px 1px 4px 0px #000000;-o-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
+    -ms-box-shadow: 1px 1px 4px 0px #000000;-ms-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 4px 0px #000000;box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
+
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+
+    cursor: pointer;
+}
+a.aCompetitionReg:hover {
+    -webkit-box-shadow: 0px 0px 16px 0px #0098DF;-webkit-box-shadow: 0px 0px 16px 0px rgba(0,152,223,1);
+    -moz-box-shadow: 0px 0px 16px 0px #0098DF;-moz-box-shadow: 0px 0px 16px 0px rgba(0,152,223,1);
+    -o-box-shadow: 0px 0px 16px 0px #0098DF;-o-box-shadow: 0px 0px 16px 0px rgba(0,152,223,1);
+    -ms-box-shadow: 0px 0px 16px 0px #0098DF;-ms-box-shadow: 0px 0px 16px 0px rgba(0,152,223,1);
+    box-shadow: 0px 0px 16px 0px #0098DF;box-shadow: 0px 0px 16px 0px rgba(0,152,223,1);
+}
+
+/*Стили для метода VotingPanels класса CompetitionsForm*/
+div.divMainWrap_vc {
+    position: relative;
+    margin: 40px 0 40px 0;padding: 0px 0 0 0;
+}
+div.divMainWrap_vc div.divLine_vc{      /*главная разделительная черта*/
+    position: relative;
+    width: 850px; height: 1px;
+    margin: 0 auto 1px auto;
+    background-color: #0098DF;
+
+    -webkit-box-shadow: 0px 0px 16px 0px #0098DF;-webkit-box-shadow: 0px 0px 16px 0px rgba(0,152,223,1);
+    -moz-box-shadow: 0px 0px 16px 0px #0098DF;-moz-box-shadow: 0px 0px 16px 0px rgba(0,152,223,1);
+    -o-box-shadow: 0px 0px 16px 0px #0098DF;-o-box-shadow: 0px 0px 16px 0px rgba(0,152,223,1);
+    -ms-box-shadow: 0px 0px 16px 0px #0098DF;-ms-box-shadow: 0px 0px 16px 0px rgba(0,152,223,1);
+    box-shadow: 0px 0px 16px 0px #0098DF;box-shadow: 0px 0px 8px 0px rgba(0,152,223,1);
+}
+div.divMainWrap_vc h2 {                  /*главный заголовок*/
+    position: relative;
+    padding: 7px 0 12px 0; margin: 0 0 20px 0px;
+    text-align: center;
+    font-family: Georgia; font-size: 26px; font-weight: normal; color: #555555;
+    -ms-text-shadow: 0px 1px 1px #999999;text-shadow: 0px 1px 1px #999999;
+
+    background: #ffffff;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2JmZThmOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left,  #ffffff 0%, #bfe8f9 50%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(50%,#bfe8f9), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(left,  #ffffff 0%,#bfe8f9 50%,#ffffff 100%);
+    background: -o-linear-gradient(left,  #ffffff 0%,#bfe8f9 50%,#ffffff 100%);
+    background: -ms-linear-gradient(left,  #ffffff 0%,#bfe8f9 50%,#ffffff 100%);
+    background: linear-gradient(to right,  #ffffff 0%,#bfe8f9 50%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+}
+
+
+span#spanNull_vc {                      /*надпись об отсутствии работ, утверждённых на голосование*/
+    position: relative; display: inline-block;
+    font-family: Georgia; font-size: 16px; font-weight: normal;
+    font-style: italic; color: #555555;
+}
+div.panelReqWrap_vc { /*ОСНОВНОЙ обёрточный блок одной работы*/
+    position: relative;
+    margin: 0 0 30px 0; padding: 10px 20px 10px 20px;
+    
+    -ms-border-radius: 2px;border-radius: 2px;
+    border: 1px #55bded solid;
+
+    background-color: #e4f6fe;
+
+    -webkit-box-shadow: 0px 2px 8px 0px #555555;-webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 8px 0px #555555;-moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -o-box-shadow: 0px 2px 8px 0px #555555;-o-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -ms-box-shadow: 0px 2px 8px 0px #555555;-ms-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 8px 0px #555555;box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+}
+
+div.panelReqHeader_vc {                 /*БЛОК С ЗАГОЛОВКОМ одной работы*/
+    position: relative;
+    width: 825px; margin: 0 auto 0 auto; padding: 0 0 10px 0px;
+    border-bottom: 1px #0098DF solid;
+}
+div.panelReqHeader_vc span {    /*описание заголовка*/
+    position: relative; display: inline-block;
+    width: 210px;
+    font-family: Georgia; font-size: 18px; font-weight: normal; color: #555555;
+    -ms-text-shadow: 1px 1px 0px #ffffff;text-shadow: 1px 1px 0px #ffffff;
+    vertical-align: top;
+}
+div.panelReqHeader_vc h4 {      /*заголовок*/            
+    position: relative; display: inline-block;
+    vertical-align: top; margin: 0px 0 0 0px;
+
+    font-family: Georgia; font-size: 18px; font-weight: normal; color: #1F5C9F;
+    -ms-text-shadow: 1px 1px 0px #ffffff;text-shadow: 1px 1px 0px #ffffff;
+}
+
+div.panelReqContent_vc {                 /*БЛОК СО ССЫЛКАМИ на материалы одной работы*/
+    position: relative;
+    width: 820px; margin: 0 auto 0 auto; padding: 0 0 10px 0px;
+    text-align:center;
+}
+.workComments_vc {                      /*Комментарии к работе (описание)*/
+    position: relative;display: inline-block;
+    height: 250px;
+    vertical-align: top;text-align: justify;
+    margin: 15px 0px 0px 25px; padding:  5px 10px 5px 5px;
+
+    font-family: Georgia; font-size: 16px; font-weight: normal;font-style: italic; color: #333333;
+    text-shadow: 1px 1px 0px #ffffff;
+
+    overflow-y: scroll;
+}
+a.aFile_vc {                    /*кнопка-ссылка на документ по литературному конкурсу*/        
+    position: relative; display: inline-block;
+    margin: 10px 0 0 10px; padding: 0 0 0 0;
+    width: 30px;height: 30px;
+    background-image: url('../../images/word2013.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+a.aFile_vc:hover {
+    -webkit-box-shadow: 0px 2px 8px 0px #555555;-webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 8px 0px #555555;-moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -o-box-shadow: 0px 2px 8px 0px #555555;-o-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 8px 0px #555555;box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+}
+a.aFileVoice_vc {                    /*кнопка-ссылка на звуковой файл в конкурсе Мастер сцены Вокал или Инструментарий*/        
+    position: relative; display: inline-block;
+    margin: 10px 0 0 10px; padding: 0 0 0 0;
+    width: 40px;height: 50px;
+
+    background-image: url('../../images/mp3.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    cursor: pointer;
+}
+a.aFileVoice_vc:hover {
+    -webkit-box-shadow: 0px 2px 8px 0px #555555;-webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 8px 0px #555555;-moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -o-box-shadow: 0px 2px 8px 0px #555555;-o-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 8px 0px #555555;box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+}
+
+span.youtubeWrap_vc {           /*блок-обёртка для фрэйма с роликом ютуба*/
+    position: relative; display: inline-block; width: 250px; height: 150px;
+    vertical-align: top; margin: 10px 0 0 10px;
+
+    -webkit-box-shadow: 0px 2px 8px 0px #555555;-webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 8px 0px #555555;-moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -o-box-shadow: 0px 2px 8px 0px #555555;-o-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -ms-box-shadow: 0px 2px 8px 0px #555555;-ms-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 8px 0px #555555;box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.5);
+}
+
+span.rutube_vc { /*блок-обёртка для фрэйма с роликом рутуба*/
+    position: relative;
+    display: inline-block;
+    width: 260px;
+    height: 140px;
+    vertical-align: top;
+    margin: 10px 0 0 10px;
+    -webkit-box-shadow: 0px 2px 8px 0px #555555;
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 8px 0px #555555;
+    -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -o-box-shadow: 0px 2px 8px 0px #555555;
+    -o-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -ms-box-shadow: 0px 2px 8px 0px #555555;
+    -ms-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 8px 0px #555555;
+    box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.5);
+    background-image: url('../../images/rutube.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+a.rutube_vc:hover {
+    -webkit-box-shadow: 0px 2px 8px 0px #555555;
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 8px 0px #555555;
+    -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -o-box-shadow: 0px 2px 8px 0px #555555;
+    -o-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 8px 0px #555555;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+}
+
+span.yandexdisk_vc { /*блок-обёртка для фрэйма с яндекс диском*/
+    position: relative;
+    display: inline-block;
+    width: 260px;
+    height: 140px;
+    vertical-align: top;
+    margin: 10px 0 0 10px;
+    -webkit-box-shadow: 0px 2px 8px 0px #555555;
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 8px 0px #555555;
+    -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -o-box-shadow: 0px 2px 8px 0px #555555;
+    -o-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -ms-box-shadow: 0px 2px 8px 0px #555555;
+    -ms-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 8px 0px #555555;
+    box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.5);
+    background-image: url('../../images/yandexdisk.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+a.yandexdisk_vc:hover {
+    -webkit-box-shadow: 0px 2px 8px 0px #555555;
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 8px 0px #555555;
+    -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -o-box-shadow: 0px 2px 8px 0px #555555;
+    -o-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 8px 0px #555555;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+}
+
+a.aFilePowerPoint_vc { /*кнопка-ссылка на звуковой файл в конкурсе Мастер сцены Вокал или Инструментарий*/
+    position: relative;
+    display: inline-block;
+    margin: 10px 0 0 10px;
+    padding: 0 0 0 0;
+    width: 40px;
+    height: 50px;
+    background-image: url('../../images/powerpoint.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+a.aFilePowerPoint_vc:hover {
+    -webkit-box-shadow: 0px 2px 8px 0px #555555;
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 8px 0px #555555;
+    -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -o-box-shadow: 0px 2px 8px 0px #555555;
+    -o-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 8px 0px #555555;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+}
+
+
+div.panelReqFooter_vc {                 /*БЛОК С КНОПКАМИ ДЛЯ ГОЛОСОВАНИЯ по одной работе*/
+    position: relative;
+    width: 825px; margin: 0 auto 0 auto; padding: 15px 0 0px 0px;
+    border-top: 1px #0098DF solid;
+    text-align: right;
+}
+span.golosuy_vc {               /*надпись перед кнопками голосования*/
+    position: relative; display: inline-block;
+    font-family: Georgia; font-size: 14px; font-weight: normal; color: #555555;
+    -ms-text-shadow: 0px 1px 1px #ffffff;text-shadow: 1px 1px 0px #ffffff;
+    vertical-align: top;
+}
+.lblNumZa_vc {                  /*лэйба с количеством ЗА*/
+    position: relative; display: inline-block;
+    margin: -4px 0 0 10px;
+    font-family: Times; font-size: 22px; font-weight: bold; color: #50BF67;
+    -ms-text-shadow: 0px 1px 1px #ffffff;text-shadow: 1px 1px 0px #ffffff;
+    vertical-align: top;
+}
+.lBtnZa_vc {                    /*кнопка голосования ЗА*/
+    position: relative; display: inline-block;
+    margin: -8px 0 0 5px; padding: 0 0 0 0;
+    width: 30px;height: 30px;
+    
+    -ms-border-radius: 4px;border-radius: 4px;
+
+    background-image: url('../../images/like.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    cursor: pointer;
+}
+.lBtnZa_vc:hover {
+    background-color: #ffffff;
+
+    -webkit-box-shadow: 0px 2px 8px 0px #555555;-webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 8px 0px #555555;-moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -o-box-shadow: 0px 2px 8px 0px #555555;-o-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -ms-box-shadow: 0px 2px 8px 0px #555555;-ms-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 8px 0px #555555;box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+}
+.lblNumNo_vc {                  /*лэйба с количеством ПРОТИВ*/
+    position: relative; display: inline-block;
+    margin: -4px 0 0 10px;
+    font-family: Times; font-size: 22px; font-weight: bold; color: #D62025;
+    -ms-text-shadow: 0px 1px 1px #ffffff;text-shadow: 1px 1px 0px #ffffff;
+    vertical-align: top;
+}
+.lBtnNo_vc {                    /*кнопка голосования ПРОТИВ*/
+    position: relative; display: inline-block;
+    margin: -8px 0 0 5px; padding: 0 0 0 0;
+    width: 30px;height: 30px;
+    
+    -ms-border-radius: 4px;border-radius: 4px;
+
+    background-image: url('../../images/nolike.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    cursor: pointer;
+}
+.lBtnNo_vc:hover {
+    background-color: #ffffff;
+
+    -webkit-box-shadow: 0px 2px 8px 0px #555555;-webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 8px 0px #555555;-moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -o-box-shadow: 0px 2px 8px 0px #555555;-o-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -ms-box-shadow: 0px 2px 8px 0px #555555;-ms-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 8px 0px #555555;box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+}
+
+.lBtnSumZa_vc {                    /*кнопка голосования ЗА(итоговое голосование)*/
+    position: relative; display: inline-block;
+    margin: -6px 0 0 5px; padding: 2px 7px 0px 7px;
+    line-height: 1em;
+    /*width: 26px;height: 26px;*/
+
+    font-family: Times; font-size: 26px; font-weight: bold; color: #938f10;
+    -ms-text-shadow: 0px 1px 1px #ffffff;text-shadow: 1px 1px 0px #ffffff;
+    text-align: center;vertical-align: top; text-decoration: none;
+    
+    -ms-border-radius: 4px;border-radius: 4px;
+
+    cursor: pointer;
+}
+.lBtnSumZa_vc:hover {
+    background-color: #ffffff;
+
+    -webkit-box-shadow: 0px 2px 8px 0px #555555;-webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 8px 0px #555555;-moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -o-box-shadow: 0px 2px 8px 0px #555555;-o-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    -ms-box-shadow: 0px 2px 8px 0px #555555;-ms-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 8px 0px #555555;box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+}

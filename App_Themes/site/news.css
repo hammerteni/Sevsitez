@@ -1,0 +1,134 @@
+﻿/* Стили для новостей. Применяются в классе NewsForm */
+div.panelAllWrap_nf {   /*главная обёрточная панель*/
+    position: relative;
+}
+h2.title_nf { /*Заголовок всего блока*/
+    position: relative;
+    text-align: center;
+    margin: 10px 0 30px 0;padding: 10px 0 10px 0;
+
+    font-family: Georgia;font-weight: normal;font-size: 22px;color: #014282;
+    -ms-text-shadow: 0px 1px 0px #ffffff;
+    text-shadow: 0px 1px 0px #ffffff;
+
+    border-top: 1px #ffffff solid;
+    border-bottom: 1px #ffffff solid;
+
+    background: rgb(243,243,243);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YzZjNmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2JlZTRmOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmM2YzZjMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left,  rgba(243,243,243,1) 0%, rgba(190,228,248,1) 50%, rgba(243,243,243,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(243,243,243,1)), color-stop(50%,rgba(190,228,248,1)), color-stop(100%,rgba(243,243,243,1)));
+    background: -webkit-linear-gradient(left,  rgba(243,243,243,1) 0%,rgba(190,228,248,1) 50%,rgba(243,243,243,1) 100%);
+    background: -o-linear-gradient(left,  rgba(243,243,243,1) 0%,rgba(190,228,248,1) 50%,rgba(243,243,243,1) 100%);
+    background: -ms-linear-gradient(left,  rgba(243,243,243,1) 0%,rgba(190,228,248,1) 50%,rgba(243,243,243,1) 100%);
+    background: linear-gradient(to right,  rgba(243,243,243,1) 0%,rgba(190,228,248,1) 50%,rgba(243,243,243,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#f3f3f3',GradientType=1 );
+}
+
+div.newsBlock_nf {      /*Обёрточный блок для самого блока с новостями*/
+    position: relative;
+}
+div.oneNews_nf {        /*Обёрточный блок для блока с одной новостью*/
+    position: relative;
+    margin: 15px 25px 15px 25px;padding: 0 0 0 0;
+}
+table.tbl_nf {          /*Таблица с данными по одной новости*/
+    position: relative;
+    width: 100%;
+}
+td.tdImage_nf {         /*Ячейка с картинкой новости*/
+    width: 120px;
+    cursor: pointer;
+    border-bottom: 1px #d9d9d9 solid;
+}
+td.tdImage_nf a img {         /*Ссылка на страницу с полным описанием новости*/
+    position: relative;
+    width: 100px;
+
+    -webkit-box-shadow: 1px 1px 7px 0px #777777; -webkit-box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.7);
+    -moz-box-shadow: 1px 1px 7px 0px #777777; -moz-box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.7);
+    -o-box-shadow: 1px 1px 7px 0px #777777; -o-box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.7);
+    -ms-box-shadow: 1px 1px 7px 0px #777777; -ms-box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.7);
+    box-shadow: 1px 1px 7px 0px #777777; box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.7);
+
+    cursor: pointer;
+}
+td.tdDate_nf {          /*Ячейка с датой новости*/
+    padding: 0 0 0 0;
+    font-family: Arial;font-weight: normal;font-size: 12px;color: #014282;
+}
+td.tdTitle_nf {         /*Ячейка с заголовком новости*/
+    padding: 0 0 0 20px;
+    background: rgb(255,255,255);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE2JSIgc3RvcC1jb2xvcj0iI2YzZjNmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg0JSIgc3RvcC1jb2xvcj0iI2YzZjNmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 16%, rgba(243,243,243,1) 84%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(16%,rgba(243,243,243,1)), color-stop(84%,rgba(243,243,243,1)), color-stop(100%,rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 16%,rgba(243,243,243,1) 84%,rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 16%,rgba(243,243,243,1) 84%,rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 16%,rgba(243,243,243,1) 84%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 16%,rgba(243,243,243,1) 84%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+
+}
+td.tdTitle_nf a {       /*Ссылка на страницу с полным описанием новости*/
+    font-family: Georgia;font-weight: normal;font-size: 20px;color: #bf670e;
+    text-decoration: none;
+    cursor: pointer;
+}
+td.tdTitle_nf a:hover {
+    text-decoration: underline;
+}
+td.tdAnons_nf {         /*Ячейка с текстом анонса новости*/
+    padding: 10px 0 10px 10px;
+    font-family: Arial;font-weight: normal;font-size: 14px;color: #000000;
+    background: rgb(255,255,255);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE2JSIgc3RvcC1jb2xvcj0iI2YzZjNmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg0JSIgc3RvcC1jb2xvcj0iI2YzZjNmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 16%, rgba(243,243,243,1) 84%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(16%,rgba(243,243,243,1)), color-stop(84%,rgba(243,243,243,1)), color-stop(100%,rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 16%,rgba(243,243,243,1) 84%,rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 16%,rgba(243,243,243,1) 84%,rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 16%,rgba(243,243,243,1) 84%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 16%,rgba(243,243,243,1) 84%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+
+    border-bottom: 1px #d9d9d9 solid;
+}
+
+
+
+/*Стили для страницы с полной информацией по одной новости*/
+div.panelWrap_one_nf {  /*главная обёрточная панель для одной страницы с полной информацией по новости*/
+    
+}
+h2.titleOne_nf {
+    position: relative;
+    text-align: center;
+    margin: 10px 0 10px 0;padding: 10px 0 10px 0;
+
+    font-family: Georgia;font-weight: normal;font-size: 22px;color: #014282;
+    -ms-text-shadow: 0px 1px 0px #ffffff;
+    text-shadow: 0px 1px 0px #ffffff;
+
+    border-top: 1px #ffffff solid;
+    border-bottom: 1px #ffffff solid;
+
+    background: rgb(243,243,243);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YzZjNmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2JlZTRmOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmM2YzZjMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left,  rgba(243,243,243,1) 0%, rgba(190,228,248,1) 50%, rgba(243,243,243,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(243,243,243,1)), color-stop(50%,rgba(190,228,248,1)), color-stop(100%,rgba(243,243,243,1)));
+    background: -webkit-linear-gradient(left,  rgba(243,243,243,1) 0%,rgba(190,228,248,1) 50%,rgba(243,243,243,1) 100%);
+    background: -o-linear-gradient(left,  rgba(243,243,243,1) 0%,rgba(190,228,248,1) 50%,rgba(243,243,243,1) 100%);
+    background: -ms-linear-gradient(left,  rgba(243,243,243,1) 0%,rgba(190,228,248,1) 50%,rgba(243,243,243,1) 100%);
+    background: linear-gradient(to right,  rgba(243,243,243,1) 0%,rgba(190,228,248,1) 50%,rgba(243,243,243,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#f3f3f3',GradientType=1 );
+}
+span.spanPre_nf {       /*текст перед датой*/
+    font-family: Arial;font-weight: normal;font-size: 12px;color: #000000;
+}
+span.spanDate_nf {      /*дата*/
+    font-family: Arial;font-weight: normal;font-size: 12px;color: #014282;
+}
+div.divTextWrap_nf {    /*блок, оборачивающий основное содержимое новости*/
+    position: relative;
+    margin: 40px 0 0 0;padding: 0 15px 0 15px;
+}

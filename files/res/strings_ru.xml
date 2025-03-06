@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<strings>
+
+  <!--Фразы, входящие в информацию о клиенте у ботов-->
+  <string name="bots_words">bot,spider,crawler,yo-yo,top100,archiver,declare,validator,slurp,go 1.1 package http,curl,dataprovider,funwebproducts,java,abachobot,addsugarspiderbot,anyapexbot,arachmo,yahoo,findlinks</string>
+
+  
+  <!--Значения кодов возвратов Яндекс Переводчика-->
+  <string name="warn_translate_401">Неправильный API-ключ</string>
+  <string name="warn_translate_402">API-ключ заблокирован</string>
+  <string name="warn_translate_404">Превышено суточное ограничение на объем переведенного текста</string>
+  <string name="warn_translate_413">Превышен максимально допустимый размер текста</string>
+  <string name="warn_translate_422">Текст не может быть переведен</string>
+  <string name="warn_translate_501">Заданное направление перевода не поддерживается</string>
+
+</strings>

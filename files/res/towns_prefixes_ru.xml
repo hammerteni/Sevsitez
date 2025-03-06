@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rustownsprefs>
+  <pref>Город</pref>
+  <pref>Аал</pref>
+  <pref>Арбан</pref>
+  <pref>Аул</pref>
+  <pref>Выселок</pref>
+  <pref>Дачный поселок</pref>
+  <pref>Деревня</pref>
+  <pref>Курортный поселок</pref>
+  <pref>Лесной поселок</pref>
+  <pref>Населенный пункт</pref>
+  <pref>Поселок</pref>
+  <pref>Поселок городского типа</pref>
+  <pref>Поселок при железнодорожной станции</pref>
+  <pref>Поселок при станции</pref>
+  <pref>Рабочий поселок</pref>
+  <pref>Село</pref>
+  <pref>Слобода</pref>
+  <pref>Станица</pref>
+  <pref>Улус</pref>
+  <pref>Хутор</pref>
+</rustownsprefs>

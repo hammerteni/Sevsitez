@@ -1,0 +1,55 @@
+﻿/*анимация появления меню*/
+@-webkit-keyframes nav {
+	from {left: -150px;}
+	to {left: 10px;}
+}
+@-moz-keyframes nav {
+	0% {left: -150px;}
+	100% {left: 10px;}
+}
+@-o-keyframes nav {
+	from {left: -150px;}
+	to {left: 10px;}
+}
+@keyframes nav {
+	0% {left: -150px;}
+	100% {left: 10px;}
+}
+
+/*анимация появления верхней секции*/
+@-webkit-keyframes down {
+	from {top: -30px;}
+	to {top: 0;}
+}
+@-moz-keyframes down {
+	0% {top: -30px;}
+	100% {top: 0;}
+}
+@-o-keyframes down {
+	from {top: -30px;}
+	to {top: 0;}
+}
+@keyframes down {
+	0% {top: -30px;}
+	100% {top: 0;}
+}
+
+/*анимация появления*/
+@-webkit-keyframes show {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@-moz-keyframes show {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-o-keyframes show {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@keyframes show {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+

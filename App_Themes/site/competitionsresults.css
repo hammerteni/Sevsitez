@@ -1,0 +1,137 @@
+﻿/*Стили к competitionfoto.aspx, competitionliterary.aspx, competitiontheatre.aspx. CompetitionsForm\ResultsListPanel*/
+
+div.divMainWrap_cr {
+    position: relative;
+    margin: 40px 0 25px 0;padding: 0px 0 0 0;
+}
+div.divMainWrap_cr div.divLine_cr{      /*главная разделительная черта*/
+    position: relative;
+    width: 850px; height: 1px;
+    margin: 0 auto 1px auto;
+    background-color: #0098DF;
+
+    -webkit-box-shadow: 0px 0px 16px 0px #0098DF;-webkit-box-shadow: 0px 0px 16px 0px rgba(0,152,223,1);
+    -moz-box-shadow: 0px 0px 16px 0px #0098DF;-moz-box-shadow: 0px 0px 16px 0px rgba(0,152,223,1);
+    -o-box-shadow: 0px 0px 16px 0px #0098DF;-o-box-shadow: 0px 0px 16px 0px rgba(0,152,223,1);
+    box-shadow: 0px 0px 16px 0px #0098DF;box-shadow: 0px 0px 8px 0px rgba(0,152,223,1);
+}
+div.divMainWrap_cr h2 {                  /*главный заголовок*/
+    position: relative;
+    padding: 7px 0 12px 0; margin: 0 0 20px 0px;
+    text-align: center;
+    font-family: Georgia; font-size: 26px; font-weight: normal; color: #555555;
+    -ms-text-shadow: 0px 1px 1px #999999;text-shadow: 0px 1px 1px #999999;
+
+    background: #ffffff;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2JmZThmOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left,  #ffffff 0%, #bfe8f9 50%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(50%,#bfe8f9), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(left,  #ffffff 0%,#bfe8f9 50%,#ffffff 100%);
+    background: -o-linear-gradient(left,  #ffffff 0%,#bfe8f9 50%,#ffffff 100%);
+    background: -ms-linear-gradient(left,  #ffffff 0%,#bfe8f9 50%,#ffffff 100%);
+    background: linear-gradient(to right,  #ffffff 0%,#bfe8f9 50%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+}
+
+div#spanNull_cr {                      /*надпись об отсутствии участников*/
+    position: relative; padding-top: 10px;
+    font-family: Georgia; font-size: 16px; font-weight: normal;
+    font-style: italic; color: #555555;
+}
+
+/*ТАБЛИЦА*/
+table.tblResults_cr{
+    width: 850px;
+}
+td.td_header_cr{   /*общий стиль для ячейки шапки таблицы*/
+    padding: 5px 9px 10px 9px;
+    font-family: Georgia, 'Times New Roman', Times, serif; font-size: 15px; font-weight: bold; font-style: normal;
+    color: #555555;
+    text-align: center;
+
+    border: 1px solid #f1f1f1;
+}
+td.td_header_npp_cr{
+    width: 55px;
+}
+td.td_header_fio_cr{
+    width: 610px;
+}
+td.td_header_cert_cr{
+    width: 100px;
+}
+td.td_header_dipl_cr{
+    width: 100px;
+}
+td.td_content_cr{   /*общий стиль для ячейки содержимого таблицы*/
+    padding: 5px 9px 5px 9px;
+    font-family: Times; font-size: 16px; font-weight: normal; font-style: normal;
+    text-align: center;
+
+    border: 1px solid #f1f1f1;
+}
+
+/*Универсальный стиль для спецкнопок (белые кнопки)*/
+.btnSpec_cr{
+    position: relative; display: inline-block;
+    padding: 3px 10px; margin: 0 3px 0 0;
+    
+    font-family: Times; font-size: 14px; font-weight: bold; color: #af6613;
+    text-decoration: none;
+    
+    border-radius: 4px;
+    border: 1px solid #dedede;
+
+    background: rgb(255,255,255);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZGVkZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(237,237,237,1)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%);
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
+
+    -webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s;
+
+    cursor: pointer;
+}
+.btnSpec_cr:hover{
+    -webkit-box-shadow: 1px 1px 3px #000000;
+    -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.3);
+    box-shadow: 1px 1px 3px #000000;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.3);
+}
+
+/*Общий стиль для текстбоксов*/
+.txtBoxUniverse_adm {
+    padding: 3px;
+    border: 1px #ccc solid;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    background: rgb(255,255,255); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    /*background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2YzZjNmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2VkZWRlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);*/
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C */
+    -webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+    -moz-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+    -o-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
+    font-family: Calibri;
+    font-size: 14px;
+    color: #846470;
+    text-align: left;
+}
+
+    .txtBoxUniverse_adm:focus {
+        background: #fff;
+    }
+

@@ -1,0 +1,25 @@
+User-agent: Yandex
+Disallow: /adm/
+Disallow: /files/
+Disallow: /fonts/
+Disallow: /images/
+Disallow: /Scripts/
+Disallow: /working.aspx
+Sitemap: https://sevastopolets-moskva.ru/sitemap.xml
+Host: sevastopolets-moskva.ru
+
+User-agent: Googlebot
+Disallow: /adm/
+Disallow: /files/
+Disallow: /fonts/
+Disallow: /images/
+Disallow: /Scripts/
+Disallow: /working.aspx
+
+User-agent: *
+Disallow: /adm/
+Disallow: /files/
+Disallow: /fonts/
+Disallow: /images/
+Disallow: /Scripts/
+Disallow: /working.aspx

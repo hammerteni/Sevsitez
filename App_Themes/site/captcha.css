@@ -1,0 +1,164 @@
+﻿/*стили для captcha*/
+
+#formOpacTbl_captcha {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 666;
+    border-collapse: collapse;
+    background-color: #333;
+    background-color: rgba(0,0,0,.7);
+}
+#formOpacTbl_captcha tr td {
+    text-align: center;
+    vertical-align: middle;
+}
+#btnFormClose_captcha {
+    position: absolute;
+    display: inline-block;
+    -ms-opacity: 0.5; opacity: 0.5;
+    z-index: 668;
+    cursor: pointer;
+    
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+#btnFormClose_captcha:hover {
+    -ms-opacity: 1;
+    opacity: 1;
+}
+#btnFormClose_captcha:active {
+    -ms-opacity: 0.5;
+    opacity: 0.5;
+}
+#formDiv_captcha {
+    position: relative; display: block;
+    width: 450px; margin: auto;
+    padding: 20px;
+    
+    -ms-border-radius: 4px; border-radius: 4px;
+
+    background-color: #FFFFFF;
+    background-image: url('../../images/opac_win_bckgrd.jpg');
+    background-repeat: repeat;
+
+    -webkit-box-shadow: 2px 2px 9px 0px #000000; -webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.9);
+    -moz-box-shadow: 2px 2px 9px 0px #000000; -moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.9);
+    -o-box-shadow: 2px 2px 9px 0px #000000; -o-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.9);
+    -ms-box-shadow: 2px 2px 9px 0px #000000; -ms-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.9);
+    box-shadow: 2px 2px 9px 0px #000000; box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.9);
+}
+span.btnSend_captcha {
+    position: relative; display: block;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px 27px 8px 27px;
+    
+    -ms-border-radius: 4px; border-radius: 4px;
+    border: 1px transparent solid;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 20px; font-weight: bold; color: #168541;
+    -ms-text-shadow: 1px 1px 0 #ffffff;text-shadow: 1px 1px 0 #ffffff;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2e2e2+0,dbdbdb+50,d1d1d1+51,fefefe+100;Grey+Gloss+%231 */
+    background: rgb(226,226,226); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UyZTJlMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2RiZGJkYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2QxZDFkMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZWZlZmUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(226,226,226,1)), color-stop(50%,rgba(219,219,219,1)), color-stop(51%,rgba(209,209,209,1)), color-stop(100%,rgba(254,254,254,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-8 */
+
+    -webkit-box-shadow: 1px 1px 4px 0px #000000; -webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.7);
+    -moz-box-shadow: 1px 1px 4px 0px #000000; -moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.7);
+    -o-box-shadow: 1px 1px 4px 0px #000000; -o-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.7);
+    -ms-box-shadow: 1px 1px 4px 0px #000000; -ms-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.7);
+    box-shadow: 1px 1px 4px 0px #000000; box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.7);
+    
+    -webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s;
+}
+span.btnSend_captcha:hover {
+    color: #0b3357;
+    border: 1px #ffffff solid;
+}
+.txtBoxFormUniv_captcha {
+    position: relative; display: inline-block;
+    width: 240px;
+    margin: 0 0 0 5px;
+    
+    padding: 2px 9px;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; 
+    font-size: 17px; font-weight: normal; font-style: italic; color: #000000;
+    text-align: left;
+    
+    -ms-border-radius: 2px; border-radius: 2px;
+
+    -webkit-box-shadow: inset 0 0 4px #000000; -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.7);
+    -ms-box-shadow: inset 0 0 4px #000000; -ms-box-shadow: inset 0 0 4px rgba(0,0,0,0.7);
+    box-shadow: inset 0 0 4px #000000; box-shadow: inset 1px 1px 4px rgba(0,0,0,0.7);
+}
+.oneLineDiv_captcha {
+    margin: 0 0 0px 0;
+    padding: 9px;
+    vertical-align: top;
+}
+.divError_captcha {
+    height: 30px;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; 
+    font-size: 16px; color: #e24149;
+}
+.divForm_Title_captcha {
+    height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 20px;font-weight: bold; color: #255D8E;
+    -ms-text-shadow: 1px 1px 0 #ffffff;text-shadow: 1px 1px 0 #ffffff;
+    text-align: center;
+}
+#waitImg_captcha {
+    position: absolute;
+    left: 43%; top: 43%;
+}
+span.captTxt_captcha {
+    position: relative; display: inline-block;
+    width: 100%; height: 60px;
+    padding: 0px 5px 0px 0px;
+    
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 16px; color: #255D8E;
+}
+img.reCaptcha {
+    position: relative; display:block;
+    margin: 0 auto 10px auto;
+    cursor: pointer;
+
+    border-radius: 30px;
+
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+img.reCaptcha:hover {
+    -webkit-box-shadow: 0px 0px 9px 0px #168541;
+    -moz-box-shadow: 0px 0px 9px 0px #168541;
+    -o-box-shadow: 0px 0px 9px 0px #168541;
+    -ms-box-shadow: 0px 0px 9px 0px #168541;
+    box-shadow: 0px 0px 9px 0px #168541;
+}
+
+.placeHolderForm_captcha::-webkit-input-placeholder {font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; font-size: 17px;font-weight: normal; font-style: italic; color: #a9a9a9;}
+.placeHolderForm_captcha::-moz-placeholder {font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; font-size: 17px;font-weight: normal; font-style: italic; color: #a9a9a9;}
+.placeHolderForm_captcha:-moz-placeholder {font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; font-size: 17px;font-weight: normal; font-style: italic; color: #a9a9a9;}
+.placeHolderForm_captcha:-ms-input-placeholder {font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; font-size: 17px;font-weight: normal; font-style: italic; color: #a9a9a9;}

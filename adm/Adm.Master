@@ -1,0 +1,197 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Adm.master.cs" Inherits="site.adm.Adm" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Консоль управления</title>
+
+    <link href="~/App_Themes/site/cssreset.css?v=1" rel="stylesheet" type="text/css" />
+    <link href="~/App_Themes/site/animations.css?v=1" rel="stylesheet" type="text/css" />
+    <link href="~/App_Themes/site/fonts.css?v=1" rel="stylesheet" type="text/css" />
+    <link href="~/App_Themes/site/info.css?v=1" rel="stylesheet" type="text/css" />
+    <link href="~/App_Themes/site/admconsole.css?v=15" rel="stylesheet" type="text/css" />
+    <link href="~/App_Themes/site/txtpages.css?v=1" rel="stylesheet" type="text/css" />
+    <link href="~/App_Themes/site/waiting.css?v=0" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/Scripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/Scripts/site.js?v=11"></script>
+    <script type="text/javascript" src="/Scripts/waiting.js?v=0"></script>
+    <link rel="stylesheet" href="~/Scripts/typeahead/jquery.typeahead.min.css?v=14" type="text/css" />
+    <meta name="yandex-verification" content="366b0933355674e2" />
+    <!--[if gte IE 9]>
+        <style type="text/css">
+            .gradient {
+                filter: none;
+            }
+        </style>
+    <![endif]-->
+
+<%--    <script type="text/javascript" src="/components/vue/vue.min.js"></script>--%>
+<%--    <script type="text/javascript" src="/components/vue/vuex.js"></script>--%>
+<%--    <script type="text/javascript" src="/components/vue-router/vue-router.min.js"></script>--%>
+<%--    <script type="text/javascript" src="/components/vue/portal-vue.umd.min.js"></script>--%>
+<%--    <script type="text/javascript" src="/components/luxon/luxon.js"></script>--%>
+<%--    <script type="text/javascript" src="/components/weekstart/full.js"></script>
+    <script type="text/javascript" src="/components/vue-datetime/vue-datetime.js"></script>--%>
+    <script type="text/javascript">
+          //const store = new Vuex.Store({
+          //    state: {
+          //        count: 14
+          //    },
+          //    mutations: {
+          //        increment(state) {
+          //            state.count++
+          //        }
+          //    }
+          //})
+
+          //const Counter = {
+          //    template: `<div>{{ count }}</div>`,
+          //    computed: {
+          //        count() {
+          //            return store.state.count
+          //        }
+          //    }
+          //}
+          //console.log(Counter)
+    </script>
+    <script type="text/javascript" src="/Scripts/typeahead/jquery.typeahead.min.js?v=0"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <style type="text/css">
+        .typeahead__cancel-button {
+            z-index: 1;
+        }
+    </style>
+    <form id="form1" runat="server">
+      
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="True">
+            <Services>
+                <asp:ServiceReference Path="~/DataService.asmx" />
+            </Services>
+        </asp:ScriptManager>
+
+        <%-- появляющаяся информационная строка --%>
+        <div id="divWarnWrapper" runat="server" class="divWarnWrapper" visible="False">
+            <div class="divAttentionLeft">!</div>
+            <div class="divAttentionContent">
+                <asp:Label ID="attentionContent" runat="server" Text="">
+                <%-- содержимое добавляется из кода --%>
+                </asp:Label>
+            </div>
+            <div class="divClose"><a href="" onclick="return warnVisible();">закрыть</a></div>
+            <div class="divAttentionRight">!</div>
+        </div>
+
+        <%-- появляющееся на весь экран окно на полупрозрачнм фоне(для отображения например полной информации о товаре) --%>
+        <div id="divWindowWrapper1" runat="server" class="divWindowWrapper" visible="False">
+            <div id="divWindow1" runat="server" class="divWindow">
+                <div class="divWindowClose"><a href="" onclick="windowVisible('divWindowWrapper1'); return false;">закрыть</a></div>
+                <div id="divWindowContent1" runat="server" class="divWindowContent">
+                    <%-- содержимое добавляется из кода --%>
+                </div>
+            </div>
+        </div>
+
+        <%-- Панель с кнопками переключения между страницами консоли --%>
+        <asp:Panel ID="headerDiv" runat="server" CssClass="headerDiv">
+            <noindex>
+            <asp:LinkButton ID="lBtnToPagesE" runat="server" OnClick="lBtnToPagesE_OnClick" Text="Редактор страниц" />
+            <%-- <asp:LinkButton ID="lBtnSlideShow" runat="server" OnClick="lBtnSlideShow_OnClick" Text="Слайд-шоу" /> --%>
+            <%-- <asp:LinkButton ID="lBtnSlideScroll" runat="server" OnClick="lBtnSlideScroll_OnClick" Text="Анимсписок фото" /> --%>
+            <asp:LinkButton ID="lBtnCompetition" runat="server" OnClick="lBtnCompetition_OnClick" Text="Конкурсы" />
+            <asp:LinkButton ID="lBtnCompetitionAdmin" runat="server" OnClick="lBtnCompetitionAdmin_OnClick" Text="Конкурсы (все)" />
+            <asp:LinkButton ID="lBtnCompetition_Arch" runat="server" OnClick="lBtnCompetition_Arch_OnClick" Text="Архив" />
+            <asp:LinkButton ID="lBtnToNews" runat="server" OnClick="lBtnToNews_OnClick" Text="Новости" />
+            <asp:LinkButton ID="lBtnToUsers" runat="server" OnClick="lBtnToUsers_OnClick" Text="Пользователи" />
+            <asp:LinkButton ID="lBtnToMail" runat="server" OnClick="lBtnToMail_OnClick" Text="Почта" />
+            <asp:LinkButton ID="lBtnSiteEnable" runat="server" OnClick="lBtnSiteEnable_OnClick" Text="Сайт" />
+            <asp:LinkButton ID="lBtnToConsEvents" runat="server" OnClick="lBtnToConsEvents_OnClick" Text="События консоли" />
+            <asp:LinkButton ID="lBtnToPortalEvents" runat="server" OnClick="lBtnToPortalEvents_OnClick" Text="События сайта" />
+            <asp:LinkButton ID="lBtnToErrEvents" runat="server" OnClick="lBtnToErrEvents_OnClick" Text="Ошибки" />
+            <asp:LinkButton ID="lBtnToStatistic" runat="server" OnClick="lBtnToStatistic_OnClick" Text="Статистика" />
+            <asp:LinkButton ID="lBtnToEduOrg" runat="server" OnClick="lBtnToEduOrg_OnClick" Text="Обр.учреждения" />
+            <asp:LinkButton ID="lBtnToPortal" runat="server" OnClick="lBtnToPortal_OnClick" Text="На сайт" />
+            <asp:LinkButton ID="lBtnExit" runat="server" OnClick="lBtnExit_OnClick" Text="Выйти" />
+            <%-- <a id="aManual" runat="server" href="../files/Manual.pdf" rel="nofollow" target="_blank">?</a> --%>
+            <asp:Label ID="whoami" Text="" runat="server" />
+            </noindex>
+        </asp:Panel>
+
+        <div class="pageDivWrapper">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+     <script type="text/javascript">
+
+         const GetResultData = async function (searchString) {
+             var result = [];
+             await $.ajax({
+                 type: "POST",
+                 contentType: "application/json; charset=utf-8",
+                 url: "/DataService.asmx/GetResultData",
+                 data: JSON.stringify({ searchString: searchString, reqId: $('#Result').attr("data-reqid") }),
+                 contentType: "application/json; charset=utf-8",
+                 dataType: "json",
+                 success: function (data) {
+                     result = data.d.Data;
+                 }
+             });
+             return result;
+         }
+
+         typeof $.typeahead === 'function' && $.typeahead({
+             input: ".js-typeahead-result",
+             minLength: 0,
+             maxItem: 15,
+             dynamic: true,
+             delay: 800,
+             searchOnFocus: true,
+             blurOnTab: true,
+             group: false,
+             hint: true,
+             highlight: true,
+             filter: false,
+             template: '<span class="name">{{FullName}}</span>',
+             templateValue: '{{FullName}}',
+             display: ["FullName"],
+             emptyTemplate: 'Нет результатов для запроса: <strong>{{query}}</strong>',
+             source: {
+                 data: function () {
+                     var query = this.query;
+                     var deferred = $.Deferred();
+                     GetResultData(query)
+                         .then(function (response) {
+                             deferred.resolve(response);
+                         });
+                     return deferred;
+                 }
+             },
+             callback: {
+                 onClick: function (node, a, item, event) {
+                     if (item) {
+                         $('#txtBox_Result').attr("value", item.Name);
+                     }
+                 },
+                 onCancel: function (node, item, event) {
+                     if (item) {
+                         $('#txtBox_Result').attr("value", "");
+                     }
+                 },
+                 onSubmit: function (node, form, items, event) {
+                     event.preventDefault();
+                 }
+             },
+             debug: true
+         });
+
+ 
+     </script>
+</body>
+</html>

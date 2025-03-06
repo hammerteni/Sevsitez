@@ -1,0 +1,81 @@
+﻿h1.title_co {
+    position: relative;display: block;
+    margin: 30px 0 20px 0;
+
+    text-align: center;
+    font-family: Georgia; font-size: 24px;font-weight: bold; color: #0066cc; 
+}
+table#tbl_co {
+    position: relative;
+    margin: 0 0 30px 30px;
+}
+table#tbl_co td.tdName_co {
+    width: 300px;
+    padding: 5px 0 5px 5px;
+    font-family: Georgia; font-size: 16px;font-weight: normal; color: #232323;
+}
+table#tbl_co td.tdValue_co {
+    padding: 5px 0 5px 5px;
+    font-family: Calibri; font-size: 18px;font-weight: bold; color: #232323;
+}
+table#tbl_co tr {
+    border-bottom: 1px #cccccc solid;
+}
+table#tbl_co td.tdValue_co a {
+    font-family: Calibri; font-size: 18px;font-weight: bold; color: #af6613;
+    text-decoration: none;
+    cursor: pointer;
+}
+table#tbl_co td.tdValue_co a:hover {
+    text-decoration: underline;
+}
+span.age{
+    position: relative; display: inline-block;
+    padding: 5px 5px 5px 5px;
+    vertical-align:top;
+
+    font-family: Calibri; font-size: 18px;font-weight: bold; color: #232323;
+    text-align: center;
+}
+/*Для полей добавления нового участника*/
+input.inputsAddParty{
+    position: relative; display: inline-block;
+    padding: 0px 5px 3px 5px;
+
+    border-radius: 4px;
+    border: 1px solid #808080;
+
+    font-family: Calibri; font-size: 18px;font-weight: bold; color: #232323;
+}
+input.inputsAddParty:focus{
+    box-shadow: #9a9a9a 0px 0px 5px inset;
+}
+/*Кнопка удаления участника*/
+.btnPartyDel{
+    position: relative; display: inline-block;
+    width: 30px; height: 30px;
+
+    border-radius: 18px; border: 1px solid #cccccc;
+
+    background-image: url('/images/btnClose.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    vertical-align: top;
+
+    cursor: pointer;
+}
+.btnPartyDel:hover{
+
+    border: 1px solid #cccccc;
+
+    -webkit-box-shadow: 0px 0px 5px #000000;
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+    box-shadow: 0px 0px 5px #000000;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+}
+
+.placeHolder_co::-webkit-input-placeholder {font-family: Calibri; font-size: 18px; font-style: italic; font-weight: normal; color: #999999;}
+.placeHolder_co::-moz-placeholder {font-family: Calibri; font-size: 18px; font-style: italic; font-weight: normal; color: #999999;}
+.placeHolder_co:-moz-placeholder {font-family: Calibri; font-size: 18px; font-style: italic; font-weight: normal; color: #999999;}
+.placeHolder_co:-ms-input-placeholder {font-family: Calibri; font-size: 18px; font-style: italic; font-weight: normal; color: #999999;}

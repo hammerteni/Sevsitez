@@ -1,0 +1,718 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="site.Site1" %>
+
+<%-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">--%>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <link rel="stylesheet" href="/App_Themes/site/cssreset.css?v=2" type="text/css" />
+    <link rel="stylesheet" href="/App_Themes/site/animations.css?v=1" type="text/css" />
+    <link rel="stylesheet" href="/App_Themes/site/fonts.css?v=1" type="text/css" />
+    <link rel="stylesheet" href="/App_Themes/site/SiteMaster.css?v=17" type="text/css" />
+    <link rel="stylesheet" href="/App_Themes/site/sendmailform.css?v=4" type="text/css" />
+    <link rel="stylesheet" href="/App_Themes/site/txtpages.css?v=3" type="text/css" />
+    <link rel="stylesheet" href="/App_Themes/site/sitemap.css?v=1" type="text/css" />
+    <link rel="stylesheet" href="/App_Themes/site/captcha.css?v=0" type="text/css" />
+    <link rel="stylesheet" href="~/App_Themes/site/waiting.css?v=0" type="text/css" />
+    <link rel="stylesheet" href="~/Scripts/typeahead/jquery.typeahead.min.css?v=14" type="text/css" />
+
+    <meta http-equiv='Content-Type' content='text/html' charset="Windows-1251" />
+    <meta http-equiv="Content-language" content="ru-RU" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name="robots" content="All" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="viewport" content="width=940, initial-scale=0">
+    <meta name="yandex-verification" content="366b0933355674e2" />
+
+    <!--[if gte IE 9]>
+        <style type="text/css">
+            .gradient {
+                filter: none;
+            }
+        </style>
+    <![endif]-->
+
+    <script type="text/javascript" src="/Scripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/Scripts/site.js?v=11"></script>
+    <script type="text/javascript" src="/Scripts/sendmailform.js?v=7"></script>
+    <script type="text/javascript" src="/Scripts/menu.js?v=13"></script>
+    <script type="text/javascript" src="/Scripts/captcha.js?v=0"></script>
+    <script type="text/javascript" src="/Scripts/waiting.js?v=0"></script>
+    <script type="text/javascript" src="/Scripts/contentDivHeight_simple.js?v=0"></script>
+    <script type="text/javascript" src="/Scripts/typeahead/jquery.typeahead.min.js?v=0"></script>
+
+
+    <%-- <script type="text/javascript" src="/Scripts/fixed_footer.js?v=0"></script> --%>
+
+     <%--<script type="text/javascript" src="/components/vue/vue.min.js"></script>
+    <script type="text/javascript" src="/components/vue/vuex.js"></script>
+    <script type="text/javascript" src="/components/vue/portal-vue.umd.min.js"></script>--%>
+
+<%--    <script type="text/javascript" src="/components/luxon/luxon.js"></script>
+    <script type="text/javascript" src="/components/weekstart/full.js"></script>
+    <script type="text/javascript" src="/components/vue-datetime/vue-datetime.min.js"></script>--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+            (function (m, e, t, r, i, k, a) {
+                m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+                m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+            })
+                (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+            ym(68802841, "init", {
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true
+            });
+        </script>
+       
+</head>
+<%--  <body oncontextmenu="return false;"> --%>
+<body id="app">
+   <style type="text/css">
+        .typeahead__cancel-button {
+            z-index: 1;
+        }
+    </style>
+    <%--<div style="width:600px;">
+        <div>
+            <input type="radio" id="organization" name="eduTypeName" value="Образовательное учреждение" checked="checked" />
+            <label for="organization">Образовательное учреждение</label>
+        </div>
+
+        <div>
+            <input type="radio" id="individ" name="eduTypeName" value="Индивидуальная заявка"  />
+            <label for="individ">Индивидуальная заявка</label>
+        </div>
+              
+        <div class="typeahead__container js-typeahead-container-org" style="display:block;">
+            <div class="typeahead__field">
+                <div class="typeahead__query">
+                    <input style="min-height:30px;padding:0.2rem 0.6rem"
+                            class="js-typeahead-org"
+                            id="EducationalOrganization"
+                            autofocus="autofocus"
+                            autocomplete="off"
+                            placeholder="Введите название вашего учреждения">
+                </div>
+            </div>
+        </div>
+           
+        <div class="typeahead__container js-typeahead-container-individ" style="display:none;">
+            <div class="typeahead__field">
+                <div class="typeahead__query">
+                    <input style="min-height:30px;padding:0.2rem 0.6rem" 
+                        class="js-typeahead-individ"
+                        id="EducationalOrganizationFullAddress"
+                        autofocus
+                        autocomplete="off"
+                        placeholder="Введите название вашего города">
+                </div>
+            </div>
+        </div>
+
+        <div class="typeahead__container" style="width:600px">
+            <div class="typeahead__field" style="margin-top:5px">
+                <input style="min-height:30px;padding:0.2rem 0.6rem"
+                    id="District"
+                    placeholder="Федеральный округ"
+                    disabled="disabled">
+            </div>
+            <div class="typeahead__field" style="margin-top:5px">
+                <input style="min-height:30px;padding:0.2rem 0.6rem"
+                    id="Region"
+                    placeholder="Регион"
+                    disabled>
+            </div>
+                <div class="typeahead__field" style="margin-top:5px">
+                <input style="min-height:30px;padding:0.2rem 0.6rem"
+                    id="Area"
+                    placeholder="Район"
+                    disabled>
+                       
+            </div>
+                <div class="typeahead__field" style="margin-top:5px">
+                <input style="min-height:30px;padding:0.2rem 0.6rem"
+                    id="City"
+                    placeholder="Город"
+                    disabled>
+                       
+            </div>
+        </div>
+    </div>--%>
+    
+    <noscript><div><img src="https://mc.yandex.ru/watch/68802841" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+    <form id="form1" runat="server">
+
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="True">
+            <Services>
+                <asp:ServiceReference Path="~/DataService.asmx" />
+            </Services>
+        </asp:ScriptManager>
+
+        <h1 id="main_Title">Государственное бюджетное образовательное учреждение дополнительного образования города Москвы «Дворец творчества детей и молодежи «Севастополец»</h1>
+
+        <div id="headerDiv" class="headerDiv">
+
+            <table class="departTbl">
+                <tr>
+                    <td rowspan="4">
+                        <img id="depart_logo" src="../../../images/depart_logo.png"
+                            alt="логотип Департартамента образования города Москвы"
+                            title="Департартамент образования города Москвы"
+                            onclick="location.href('http://dogm.mos.ru/');" /></td>
+                </tr>
+                <tr>
+                    <td><span id="span1">ДЕПАРТАМЕНТ</span></td>
+                </tr>
+                <tr>
+                    <td><span id="span2">ОБРАЗОВАНИЯ</span></td>
+                </tr>
+                <tr>
+                    <td><span id="span3">ГОРОДА МОСКВЫ</span></td>
+                </tr>
+            </table>
+
+            <a id="seva_logo" href="/">
+                <img src="../../../images/seva_logo.png"
+                    alt="логотип Государственное бюджетное образовательное учреждение дополнительного образования города Москвы «Дворец творчества детей и молодежи «Севастополец»"
+                    title="Государственное бюджетное образовательное учреждение дополнительного образования города Москвы «Дворец творчества детей и молодежи «Севастополец»" />
+            </a>
+
+            <div id="divSocialWrap">
+                <div id="divSocialTitle">
+                    <span>Образовательный проект в соцсетях:</span>
+                </div>
+                <div id="divSocialBtns">
+                    <a id="vkBtn" href="http://vk.com/club113553564" title="VKontakte" target="_blank"></a>
+                    <!--<a id="fbBtn" href="https://www.facebook.com/groups/1672077899725077/" title="Facebook" target="_blank"></a>-->
+                    <!--<a id="twitBtn" href="https://twitter.com/Dmitrii19891" title="Twitter" target="_blank"></a>-->
+                    <a id="okBtn" href="http://ok.ru/group/52989150232746" title="Одноклассники" target="_blank"></a>
+                    <!--<a id="instaBtn" href="https://www.instagram.com/p/BBfn8fmlQk-/" title="Instagram" target="_blank"></a>-->
+                    <a id="ytBtn" href="https://www.youtube.com/channel/UCGltV4JCfBUE-kthKMWwEsg" title="Youtube" target="_blank"></a>
+                    <a id="btn_Writeus" class="writeus" href="/" title="Отправить нам свой вопрос или обращение" rel="nofollow">Написать нам</a>
+                </div>
+            </div>
+
+          <%--  <noindex>
+                <a id="btn_SendRequest" href="/" title="Отправить нам свой вопрос или обращение" rel="nofollow">Написать нам</a>
+            </noindex>--%>
+
+            <%--
+                <div class="headContacts">
+                    <table>
+                        <tr>
+                            <td class="contactPreText"><span class="preambuleTel"></span></td>
+                            <td id="tdTel" runat="server" class="contactText"></td>
+                            <td id="tdMiddle" runat="server" class="contactText"></td>
+                            <td id="tdMiddle1" runat="server" class="contactText"></td>
+                            <td class="contactPreText"><span class="preambuleMail"></span></td>
+                            <td id="tdMail" runat="server" class="contactText"></td>
+                        </tr>
+                    </table>
+                </div>
+            --%>
+
+            <div class="divNavigation">
+                <div class="navBtnsWrap">
+                    <%-- блок устанавливается по центру страницы из Javascript-кода, расположенного в файле menu.js --%>
+                    <a id="about" href="/sections/about/" rel="dofollow">О нас</a>
+                     <a id="project" href="/sections/project/" rel="dofollow" onclick="return false">Образовательный проект<br />
+                        «Москва-Крым-Территория талантов»</a>
+                     <a id="stages" href="/sections/project/stages.aspx" rel="dofollow">Конкурсы</a>
+
+                    <a id="news" href="/default.aspx" rel="dofollow">Новости</a>
+
+                    <a id="muzey" href="/sections/museum/" onclick="return false;">Музей истории<br />
+                        Черноморского флота</a>
+                   
+                    <a id="contacts" href="/sections/contacts/" rel="dofollow">Контакты</a>
+                </div>
+
+                <div id="section_muzey" class="subsection">
+                    <a href="/sections/museum/" rel="dofollow">О музее</a>
+                    <a href="/sections/museum/history.aspx" rel="dofollow">История создания</a>
+                    <a href="/sections/museum/infrastructure.aspx" rel="dofollow">Инфраструктура</a>
+                    <a href="/sections/museum/fotogallery.aspx" rel="dofollow">Фотогалерея</a>
+                    <a href="/sections/museum/exposure.aspx" rel="dofollow">Экспозиция "Восстановление исторической справедливости"</a>
+                </div>
+                <div id="section_project" class="subsection">
+                    <a href="/sections/project/" rel="dofollow">О проекте</a>
+                    <a href="/sections/project/history.aspx" rel="dofollow">История проекта</a>
+                    <a href="/sections/project/info.aspx" rel="dofollow">Информационное письмо</a>
+                    <%--<a href="/sections/project/orgcomitet.aspx" rel="dofollow">Оргкомитет</a>--%>
+                    <a href="/sections/project/fotogallery.aspx" rel="dofollow">Фотогалереи к конкурсам</a>
+                    <%--<a href="/sections/project/map.aspx" rel="dofollow">География проекта</a>--%>
+                    <a href="/sections/project/resultsarch.aspx" rel="dofollow">Архив результатов</a>
+                </div>
+
+                <div id="section_stages" class="subsection">
+                    
+                    <a href="/sections/project/competitionsport/competitionsport.aspx?comp=sportChess" rel="dofollow">Спортивный турнир по шахматам «В единстве наша сила»</a>
+                    <a href="/sections/project/competitionsport/competitionsport.aspx?comp=sportCheckers" rel="dofollow">Спортивный турнир по шашкам «В единстве наша сила»</a>
+                    <a href="/sections/project/competitionsport/competitionsport.aspx?comp=sportEdinoborstva" rel="dofollow">Спортивный фестиваль по единоборствам «В единстве наша сила»</a>
+                    <a href="/sections/project/competitionsport/competitionsport.aspx?comp=sportBoks" rel="dofollow">Спортивный фестиваль по боксу «В единстве наша сила»</a>
+                    <a href="/sections/project/competitionsport/competitionsport.aspx?comp=sportLazertag" rel="dofollow">Спортивный турнир по игре в тактический лазертаг «В единстве наша сила»</a>
+                    <a href="/sections/project/competitionsport/competitionsport.aspx?comp=sportFootball" rel="dofollow">Спортивный турнир по футболу «В единстве наша сила»</a>
+                   
+                    <!--
+                    <a href="/sections/project/competitionsport/competitionsport.aspx?comp=sportBasketball" rel="dofollow">Спортивный турнир по баскетболу «В единстве наша сила»</a>
+                    <a href="/sections/project/competitionsport/competitionsport.aspx?comp=sportVolleyball" rel="dofollow">Спортивный турнир по волейболу «В единстве наша сила»</a>
+                    -->
+
+                    <a href="/sections/project/competitionfoto/competitionfoto.aspx?comp=vernisazFotoGrahipcs" rel="dofollow">Конкурс Крымский вернисаж «Фото», «Компьютерная графика»</a>
+                    <a href="/sections/project/competitionfoto/competitionfoto.aspx?comp=vernisazIzo" rel="dofollow">Конкурс Крымский вернисаж «ИЗО»</a>
+                    <a href="/sections/project/competitionfoto/competitionfoto.aspx?comp=vernisazDpi" rel="dofollow">Конкурс Крымский вернисаж «ДПИ»</a>
+
+
+                    <a href="/sections/project/competitiontheatre/competitiontheatre.aspx?comp=theatreVokal" rel="dofollow">Конкурс Мастер сцены «Вокал»</a>
+                    <a href="/sections/project/competitiontheatre/competitiontheatre.aspx?comp=theatreHudSlovo" rel="dofollow">Конкурс Мастер сцены «Художественное слово»</a>
+                    <a href="/sections/project/competitiontheatre/competitiontheatre.aspx?comp=theatreInsrum" rel="dofollow">Конкурс Мастер сцены «Инструментальный жанр»</a>
+                    <a href="/sections/project/competitiontheatre/competitiontheatre.aspx?comp=theatreHoreo" rel="dofollow">Конкурс Мастер сцены «Хореография»</a>
+                    <a href="/sections/project/competitiontheatre/competitiontheatre.aspx?comp=theatreIskustvo" rel="dofollow">Конкурс Мастер сцены «Театральное искусство»</a>
+
+                    <a href="/sections/project/competitionkorablik/competitionkorablik.aspx?comp=korablikHudSlovo" rel="dofollow">Конкурс Кораблик детства «Художественное слово»</a>
+                    <a href="/sections/project/competitionkorablik/competitionkorablik.aspx?comp=korablikHoreo" rel="dofollow">Конкурс Кораблик детства «Хореография»</a>
+                    <a href="/sections/project/competitionkorablik/competitionkorablik.aspx?comp=korablikVokal" rel="dofollow">Конкурс Кораблик детства «Вокал»</a>
+
+                    <a href="/sections/project/competitionclothes/competitionclothes.aspx?comp=modaLoskutokKuturie" rel="dofollow">Конкурс Индустрия моды «Чудесные лоскутки», «Юный кутюрье»</a>
+                    <a href="/sections/project/competitionclothes/competitionclothes.aspx?comp=modaTeatrModi" rel="dofollow">Конкурс Индустрия моды «Театр моды»</a>
+                    <a href="/sections/project/competitionclothes/competitionclothes.aspx?comp=modaModelierSedobnaya" rel="dofollow">Конкурс «Индустрия моды»</a>
+
+                    <a href="/sections/project/competitionkultura/competitionkultura.aspx?comp=openWorld" rel="dofollow">Конкурс творческих и исследовательских работ на английском языке «Открытый мир»</a>
+
+                    <a href="http://quest.sevastopolets-moskva.ru">Квест-Игра «Хранители истории»</a>
+
+                    <a href="/sections/project/competitionmathbattle/competitionmathbattle.aspx?comp=mathBattle" rel="dofollow">Математический батл «Крым в цифрах, фактах и задачах»</a>
+
+                    <a href="/sections/project/competitionvmestesila/competitionvmestesila.aspx?comp=vmesteSila" rel="dofollow">Конкурс для детей с ограниченными возможностями здоровья (ОВЗ) «Вместе мы сильнее!»</a>
+
+                    <a href="/sections/project/competitionrobotech/competitionrobotech.aspx?comp=shagVBudushee" rel="dofollow">Открытый конкурс по робототехнике и моделированию 3D ручкой «Шаг в будущее»</a>
+
+                    <a href="/sections/project/competitionmultimedia/competitionmultimedia.aspx?comp=multimedia" rel="dofollow">Конкурс мультимедийных проектов «Герой войны, достойный Славы, любимый город Севастополь!», посвященный 80-й годовщине Победы в Великой Отечественной войне 1941-1945 годов</a>
+
+                    <%--<a href="/sections/project/competitionliterary/competitionliterary.aspx" rel="dofollow">Литературный конкурс 'Москва и Крым глазами современников'</a>--%>
+                    <%--<a href="/sections/project/competitiontheatre/competitiontheatre.aspx" rel="dofollow">Конкурс творческого мастерства 'Мастер сцены'</a>--%>
+                    <%--<a href="/sections/project/competitionsport/competitionsport.aspx" rel="dofollow">Спортивные турниры</a>--%>
+                    
+                    <%--<a href="/sections/project/competitionrobotech/competitionrobotech.aspx" rel="dofollow">Конкурс по Робототехнике и моделированию 3D ручкой 'Шаг в будущее'</a>--%>
+                    <%--<a href="/sections/project/competitionkultura/competitionkultura.aspx" rel="dofollow">Конкурс творческих и исследовательских работ 'Открытый мир'</a>--%>
+                    <%--<a href="/sections/project/competitionmultimedia/competitionmultimedia.aspx" rel="dofollow">Конкурс мультимедийных проектов «Герой войны, достойный Славы, любимый город Севастополь!»</a>--%>
+                    <%--<a href="/sections/project/competitiontoponim/competitiontoponim.aspx" rel="dofollow">Черноморский флот Великой Отечественной войны в топонимике городов России</a>--%>
+                    <%--<a href="http://ommsk.sevastopolets-moskva.ru/" rel="dofollow">Олимпиада 'Объединенная математика'</a>--%>
+                    <%--<a href="/sections/project/competitionclothes/competitionclothes.aspx" rel="dofollow">Конкурс 'Индустрия моды'</a>--%>
+                   <%-- <a href="/sections/project/competitionvmestesila/competitionvmestesila.aspx" rel="dofollow">Фестиваль-конкурс 'Вместе мы сильнее!'</a>--%>
+                    <%--<a href="/sections/project/competitionkorablik/competitionkorablik.aspx" rel="dofollow">Открытый конкурс 'Кораблик детства'</a>--%>
+                    <%--<a href="/sections/project/competitioncrimroute/competitioncrimroute.aspx" rel="dofollow">Конкурс 'Крымские маршруты'</a>--%>
+                    <%--<a href="/sections/project/competitionmathbattle/competitionmathbattle.aspx" rel="dofollow">Конкурс 'Математический батл'</a>--%>
+                    <%--<a href="/sections/project/competitionkosmos/competitionkosmos.aspx" rel="dofollow">Квест-игра 'Покоряя космос'</a>--%>
+                    <%--<a href="/sections/project/competitionscience/competitionscience.aspx" rel="dofollow">Конкурс научных работ 'В моей лаборатории вот что...'</a>--%>
+                </div>
+
+              <%--  <div id="subsection_archive" class="subsection">
+                    <a href="/sections/project/archivecompetitions/competitionfoto/competitionfoto.aspx" rel="dofollow">Фотоконкурс 'Россия-Крым-Севастополь'</a>
+                    <a href="/sections/project/archivecompetitions/competitionliterary/competitionliterary.aspx" rel="dofollow">Литературный конкурс 'Боевая слава Севастополя'</a>
+                    <a href="/sections/project/archivecompetitions/competitiontheatre/competitiontheatre.aspx" rel="dofollow">Конкурс творческого мастерства 'Мастер сцены'</a>
+                    <a href="http://quest.sevastopolets-moskva.ru/archive">Квест-игра 'Хранители истории'</a>
+                </div>--%>
+            </div>
+
+        </div>
+
+        <asp:Panel ID="contentDiv" runat="server" CssClass="contentDiv">
+
+            <div class="siteMapPathMainStyle">
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server" PathSeparator="/" PathSeparatorStyle-CssClass="pathSeparatorStyle" NodeStyle-CssClass="nodeStyle" ForeColor="#663300" RootNodeStyle-ForeColor="#663300" NodeStyle-ForeColor="#663300" CssClass="mainNodeStyle" PathSeparatorStyle-ForeColor="#CC0000"></asp:SiteMapPath>
+            </div>
+
+            <asp:Panel ID="contentSubDiv" runat="server" CssClass="contentSubDiv">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <%-- содержимое страниц --%>
+                </asp:ContentPlaceHolder>
+            </asp:Panel>
+
+        </asp:Panel>
+
+        <div id="footerDiv" class="footerDiv">
+            <a id="sitemap" href="/sections/sitemap/">Карта Сайта</a>
+            <a id="partners" href="/sections/partners/">Партнёры</a>
+            <a id="mainsite" href="http://dpish.mskobr.ru/" target="_blank">Официальный сайт</a>
+            
+            <asp:Label ID="copyRight" runat="server" Text="" CssClass="copyRight">ГБОУ ДО ДТДиМ "Севастополец"<br />
+                © Все права защищены 2016 - 
+                    <asp:Label ID="copyRightAdd" runat="server" Text=""></asp:Label>
+            </asp:Label>
+        </div>
+
+        <asp:SiteMapDataSource ID="sitemapDataSource" runat="server" />
+
+    </form>
+
+     <script type="text/javascript">
+
+         const GetSchoolData = async function (searchString) {
+             var result = [];
+             await $.ajax({
+                 type: "POST",
+                 contentType: "application/json; charset=utf-8",
+                 url: "/DataService.asmx/EducationOrganizationData",
+                 data: JSON.stringify({ searchString: searchString }),
+                 contentType: "application/json; charset=utf-8",
+                 dataType: "json",
+                 success: function (data) {
+                     result = data.d.Result.Data;
+                 }
+             });
+             return result;
+         }
+
+         typeof $.typeahead === 'function' && $.typeahead({
+             input: ".js-typeahead-scholl, .js-typeahead-scholl_1, .js-typeahead-scholl_2",
+             minLength: 0,
+             maxItem: 15,
+             dynamic: true,
+             delay: 800,
+             searchOnFocus: true,
+             blurOnTab: true,
+             group: false,
+             hint: true,
+             highlight: true,
+             filter: false,
+             template: '<span class="name">{{Name}}</span>',
+             templateValue: '{{Name}}',
+             display: ["Name"],
+             emptyTemplate: 'Нет результатов для запроса: <strong>{{query}}</strong>',
+             source: {
+                 data: function () {
+                     var query = this.query;
+                     var deferred = $.Deferred();
+                     GetSchoolData(query)
+                         .then(function (response) {
+                             deferred.resolve(response);
+                         });
+                     return deferred;
+                 }
+             },
+             callback: {
+                 onClick: function (node, a, item, event) {
+                     if (item) {
+                         $('#' + node[0].id).attr("value", item.Name);
+                     }
+                 },
+                 onCancel: function (node, item, event) {
+                     if (item) {
+                         $('#' + node[0].id).attr("value", "");
+                     }
+                 },
+                 onSubmit: function (node, form, items, event) {
+                     event.preventDefault();
+                 }
+             },
+             debug: true
+         });
+
+         const GetClassRoomData = async function (searchString) {
+             var result = [];
+             await $.ajax({
+                 type: "POST",
+                 contentType: "application/json; charset=utf-8",
+                 url: "/DataService.asmx/GetClassRoomData",
+                 data: JSON.stringify({ searchString: searchString }),
+                 contentType: "application/json; charset=utf-8",
+                 dataType: "json",
+                 success: function (data) {
+                     result = data.d.Data;
+                 }
+             });
+             return result;
+         }
+
+         typeof $.typeahead === 'function' && $.typeahead({
+             input: ".js-typeahead-classroom, .js-typeahead-classroom_1, .js-typeahead-classroom_2",
+             minLength: 0,
+             maxItem: 15,
+             dynamic: true,
+             delay: 800,
+             searchOnFocus: true,
+             blurOnTab: true,
+             group: false,
+             hint: true,
+             highlight: true,
+             filter: false,
+             template: '<span class="name">{{FullName}}</span>',
+             templateValue: '{{FullName}}',
+             display: ["FullName"],
+             emptyTemplate: 'Нет результатов для запроса: <strong>{{query}}</strong>',
+             source: {
+                 data: function () {
+                     var query = this.query;
+                     var deferred = $.Deferred();
+                     GetClassRoomData(query)
+                         .then(function (response) {
+                             deferred.resolve(response);
+                         });
+                     return deferred;
+                 }
+             },
+             callback: {
+                 onClick: function (node, a, item, event) {
+                     if (item) {
+                         $('#' + node[0].id).attr("value", item.Name);
+                     }
+                 },
+                 onCancel: function (node, item, event) {
+                     if (item) {
+                         $('#' + node[0].id).attr("value", "");
+                     }
+                 },
+                 onSubmit: function (node, form, items, event) {
+                     event.preventDefault();
+                 }
+             },
+             debug: true
+         });
+
+         const GetEducationOrganizationData = async function (searchString) {
+             var result = [];
+             await $.ajax({
+                 type: "POST",
+                 contentType: "application/json; charset=utf-8",
+                 url: "/DataService.asmx/EducationOrganizationData",
+                 data: JSON.stringify({ searchString: searchString }),
+                 contentType: "application/json; charset=utf-8",
+                 dataType: "json",
+                 success: function (data) {
+                     //console.log(data.d.Result.Data);
+                     result = data.d.Result.Data;
+                 }
+             });
+             return result;
+         }
+
+         typeof $.typeahead === 'function' && $.typeahead({
+             input: ".js-typeahead-org",
+             minLength: 3,
+             maxItem: 15,
+             dynamic: true,
+             delay: 800,
+             searchOnFocus: false,
+             blurOnTab: true,
+             group: false,
+             hint: true,
+             highlight: true,
+             filter: false,
+             template: '<span>' +
+                 '<span class="name">{{FullName}}</span>' +
+                 '<div style="font-size:12px;">{{Name}}</div>' +
+                 '<div style="font-size:12px;">Регион: {{Region}}, Область: {{Area}}, Город: {{City}}</div>' +
+                 '</span>',
+             templateValue: '{{FullName}}',
+             display: ["FullName", "Name", "Region", "Area", "City"],
+             emptyTemplate: 'Нет результатов для запроса: <strong>{{query}}</strong>',
+             source: {
+                 data: function () {
+                     var query = this.query;
+                     //console.log(query);
+
+                     var deferred = $.Deferred();
+                     GetEducationOrganizationData(query)
+                         .then(function (response) {
+                             deferred.resolve(response);
+                         });
+                     return deferred;
+                 }
+             },
+             callback: {
+                 onClick: function (node, a, item, event) {
+                     if (item) {
+                         //console.log(JSON.stringify(item))
+                         $('#txtBox_EducationalOrganizationShort').attr("value", item.Name);
+                         $('#txtBox_District').attr("value", item.District)
+                         $('#txtBox_Region').attr("value", item.Region);
+                         $('#txtBox_Area').attr("value", item.Area);
+                         $('#txtBox_City').attr("value", item.City);
+                     }
+                 },
+                 onCancel: function (node, item, event) {
+                     if (item) {
+                         //console.log('cancel')
+                         //console.log(JSON.stringify(item))
+                         $('#txtBox_EducationalOrganizationShort').attr("value", "");
+                         $('#txtBox_District').attr("value", "");
+                         $('#txtBox_Region').attr("value", "");
+                         $('#txtBox_Area').attr("value", "");
+                         $('#txtBox_City').attr("value", "");
+                     }
+                 },
+                 onSubmit: function (node, form, items, event) {
+                     event.preventDefault();
+                 }
+             },
+             debug: true
+         });
+
+         const GetRegionAreaCitiesData = async function (searchString) {
+             var result = [];
+             await $.ajax({
+                 type: "POST",
+                 contentType: "application/json; charset=utf-8",
+                 url: "/DataService.asmx/RegionAreaCitiesData",
+                 data: JSON.stringify({ searchString: searchString }),
+                 contentType: "application/json; charset=utf-8",
+                 dataType: "json",
+                 success: function (data) {
+                     //console.log(data.d.Result.Data);
+                     result = data.d.Result.Data;
+                 }
+             });
+             return result;
+         }
+
+         typeof $.typeahead === 'function' && $.typeahead({
+             input: ".js-typeahead-individ",
+             minLength: 3,
+             maxItem: 15,
+             dynamic: true,
+             delay: 800,
+             searchOnFocus: false,
+             blurOnTab: true,
+             group: false,
+             hint: true,
+             highlight: true,
+             filter: false,
+             template: '<span>' +
+                 '<span class="name">Регион: {{Region}}, Район: {{Area}}, Город: {{City}}</span>' +
+                 '<div style="font-size:12px;">{{District}}</div>' +
+                 '</span>',
+             templateValue: 'Регион: {{Region}}, Район: {{Area}}, Город: {{City}}',
+             display: ["Region", "Area", "City"],
+             emptyTemplate: 'Нет результатов для запроса: <strong>{{query}}</strong>',
+             source: {
+                 data: function () {
+                     var query = this.query;
+                     //console.log(query);
+
+                     var deferred = $.Deferred();
+                     GetRegionAreaCitiesData(query)
+                         .then(function (response) {
+                             deferred.resolve(response);
+                         });
+                     return deferred;
+                 }
+             },
+             callback: {
+                 onClick: function (node, a, item, event) {
+                     if (item) {
+                         //console.log(JSON.stringify(item))
+                         $('#txtBox_District').attr("value", item.District)
+                         $('#txtBox_Region').attr("value", item.Region);
+                         $('#txtBox_Area').attr("value", item.Area);
+                         $('#txtBox_City').attr("value", item.City);
+                     }
+                 },
+                 onCancel: function (node, item, event) {
+                     if (item) {
+                         //console.log('cancel')
+                         //console.log(JSON.stringify(item))
+                         $('#txtBox_District').attr("value", "");
+                         $('#txtBox_Region').attr("value", "");
+                         $('#txtBox_Area').attr("value", "");
+                         $('#txtBox_City').attr("value", "");
+                     }
+                 },
+                 onSubmit: function (node, form, items, event) {
+                     event.preventDefault();
+                 }
+             },
+             debug: true
+         });
+
+         $(document).ready(function () {
+             var radios = document.querySelectorAll('input[type=radio][name="ctl00$ContentPlaceHolder1$eduTypeName"]');
+
+             $('#txtBox_EducationalOrganizationShort').attr("disabled", "disabled");
+             $('#txtBox_District').attr("disabled", "disabled");
+             $('#txtBox_Region').attr("disabled", "disabled");
+             $('#txtBox_Area').attr("disabled", "disabled");
+             $('#txtBox_City').attr("disabled", "disabled");
+
+             function changeHandler(event) {
+                 if (this.id === 'organization') {
+                     $('.js-typeahead-container-org').css('display', 'block');
+                     $('.js-typeahead-container-individ').css('display', 'none');
+                     $('.EducationalOrganizationShort').css('display', 'block');
+                 } else if (this.id === 'individ') {
+                     $('.js-typeahead-container-individ').css('display', 'block');
+                     $('.js-typeahead-container-org').css('display', 'none');
+                     $('.EducationalOrganizationShort').css('display', 'none');
+                 }
+                 $('#txtBox_EducationalOrganization').attr("value", "");
+                 $('#txtBox_EducationalOrganizationShort').attr("value", "");
+                 $('#txtBox_EducationalOrganizationCity').attr("value", "");
+                 $('#txtBox_District').attr("value", "");
+                 $('#txtBox_Region').attr("value", "");
+                 $('#txtBox_Area').attr("value", "");
+                 $('#txtBox_City').attr("value", "");
+             }
+
+             Array.prototype.forEach.call(radios, function (radio) {
+                 radio.addEventListener('change', changeHandler);
+
+                 if (radio.id === 'organization' && radio.checked) {
+                    $('.js-typeahead-container-org').css('display', 'block');
+                     $('.js-typeahead-container-individ').css('display', 'none');
+                     $('.js-typeahead-container-individ').attr('value', '');
+                     $('.EducationalOrganizationShort').css('display', 'block');
+                 } else if (radio.id === 'individ' && radio.checked) {
+                     $('.js-typeahead-container-individ').css('display', 'block');
+                     $('.js-typeahead-container-org').css('display', 'none');
+                     $('.js-typeahead-container-org').attr('value', '');
+                     $('.EducationalOrganizationShort').css('display', 'none');
+                 }
+             });
+
+             var lenBefore = 0;
+             var fieldsOrgs = document.querySelectorAll('input.js-typeahead-org, input.js-typeahead-individ');
+             Array.prototype.forEach.call(fieldsOrgs, function (fieldsOrg) {
+                 fieldsOrg.addEventListener("keydown",
+                     function (event) {
+                         lenBefore = $(this).val().length;
+                     })
+                 fieldsOrg.addEventListener("keyup",
+                     function (event) {
+                         var lenAfter = $(this).val().length;
+                         if (lenBefore > 2 && lenBefore != lenAfter) {
+                             $('#txtBox_EducationalOrganizationShort').attr("value", "");
+                             $('#txtBox_District').attr("value", "");
+                             $('#txtBox_Region').attr("value", "");
+                             $('#txtBox_Area').attr("value", "");
+                             $('#txtBox_City').attr("value", "");
+                         }
+                     })
+             });
+
+             var ahrefs = document.querySelectorAll('a.lBtnAddParty_c, a.lBtnDelParty_c, a.lBtnAddFoto_c, a.lBtnDelFoto_c, a.lBtnSendRequest_c, a.txtBoxLink_c');
+             Array.prototype.forEach.call(ahrefs, function (ahref) {
+                 ahref.addEventListener("click",
+                     function (event) {
+                         $('#txtBox_EducationalOrganizationShort').removeAttr("disabled");
+                         $('#txtBox_District').removeAttr("disabled");
+                         $('#txtBox_Region').removeAttr("disabled");
+                         $('#txtBox_Area').removeAttr("disabled");
+                         $('#txtBox_City').removeAttr("disabled");
+                     })
+             });
+
+         });
+     </script>
+</body>
+</html>
+

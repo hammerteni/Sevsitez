@@ -1,0 +1,148 @@
+﻿/*стили для содержимого текстовой страницы*/
+.panelTxtPageWrapper {
+    position: relative;
+    text-align: justify; vertical-align: top;
+}
+.txt {
+    display: inline;
+    padding: 0 4px 0 0;
+    font-weight: normal;
+    font-family: 'OpenSansRegular', Georgia; font-size: 14px; color: #000000;
+    line-height: 1.2em;
+}
+.txtAbz {
+    font-weight: normal;
+    font-family: 'OpenSansRegular', Georgia; font-size: 14px; color: #000000;
+    line-height: 1.2em;
+}
+.txtErr {
+    position: relative; display: block;
+    text-align: center;
+    padding: 0 4px 0 0;
+    font-family: 'OpenSansRegular', Georgia; font-size: 14px; font-weight: bold; color: #993300;
+    border-top: 1px #993300 solid; border-bottom: 1px #993300 solid; 
+    line-height: 1.2em;
+}
+.numericalListOl {
+    margin: 10px 0 5px 28px;
+    list-style-type: decimal;
+    font-family: 'OpenSansRegular', Georgia; font-size: 14px; color: #000000;
+}
+.numericalListLi {
+    margin: 0 0 5px 0;
+}
+.defisListUl {
+    margin: 10px 0 5px 28px;
+    list-style-type: disc;
+    font-family: 'OpenSansRegular', Georgia; font-size: 14px; color: #000000;
+}
+.defisListLi {
+    margin: 0 0 5px 0;
+}
+.imageStyle {
+   position: relative; display: inline-block;
+   margin: 16px;
+}
+.imageShadow {
+   -webkit-box-shadow: 4px 4px 16px #000000; -webkit-box-shadow: 4px 4px 16px rgba(0,0,0,.9);
+   -ms-box-shadow: 4px 4px 16px #000000; -ms-box-shadow: 4px 4px 16px rgba(0,0,0,.9);
+   box-shadow: 4px 4px 16px #000000; box-shadow: 4px 4px 16px rgba(0,0,0,.9);
+}
+.hyperLink {
+    padding: 0 4px 0 0;
+    font-family: 'OpenSansRegular', Georgia; font-size: 14px; color: #993300;
+    text-decoration: none;
+    line-height: 1.2em;
+    cursor: pointer;
+}
+.hyperLink:hover {
+    text-decoration: underline;
+}
+.divVideoMain {
+    margin: 10px 0; text-align: center; 
+}
+.divVideo {
+   position: relative; display: inline-block;
+    
+   -webkit-box-shadow: 4px 4px 16px #000000;
+   -webkit-box-shadow: 4px 4px 16px rgba(0,0,0,.9);
+   -ms-box-shadow: 4px 4px 16px #000000;
+   -ms-box-shadow: 4px 4px 16px rgba(0,0,0,.9);
+   box-shadow: 4px 4px 16px #000000;
+   box-shadow: 4px 4px 16px rgba(0,0,0,.9);
+}
+.tblTxtPage {
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+/*стили для раздвигающихся панелей*/
+.header {
+    position: relative; width: 95%;
+	border: 1px #61A769 solid;
+	-webkit-border-radius:4px; -moz-border-radius:4px; -o-border-radius:4px; -ms-border-radius:4px; 
+	border-radius:4px;
+	padding: 3px 9px; margin: 5px auto 5px auto;
+	text-align: justify; vertical-align: top;
+	background: #DAECF5;
+	-webkit-transition: all .3s; -moz-transition: all .3s; -o-transition: all .3s; transition: all .3s;
+    cursor: pointer;
+
+
+}
+
+.header:hover {
+	-webkit-box-shadow: 0px 0px 9px rgba(0,0,0,.7); -moz-box-shadow: 0px 0px 9px rgba(0,0,0,.7); 
+	-o-box-shadow: 0px 0px 9px rgba(0,0,0,.7); -ms-box-shadow: 0px 0px 9px rgba(0,0,0,.7); 
+	box-shadow: 0px 0px 9px rgba(0,0,0,.7);
+}
+.content {
+	position: relative; width: 95%;
+	margin: 0 auto 5px auto; padding: 5px 12px;
+	
+	border: 1px #ccc solid;
+	-webkit-border-radius:4px; -moz-border-radius:4px; -o-border-radius:4px; -ms-border-radius:4px; 
+	border-radius:4px;
+	
+	text-align: justify; vertical-align: top;
+    
+    background: rgb(204,204,204);
+    background: rgba(204,204,204,.1);
+	
+	overflow: hidden;
+}
+
+/*Стили для блока, появляющегося при наведении на другой блок (ПОЯВЛБЛОК)*/
+.hoverBlock {
+    position: relative;
+    display: inline-block;
+    margin: 0; padding: 0;
+    border-bottom: 1px #f3b746 solid;
+    cursor: context-menu;
+}
+.hoverBlock:hover {
+    background-color: #f3b746;
+    -webkit-transition: background-color .3s;
+	-moz-transition: background-color .3s;
+	-o-transition: background-color .3s;
+    -ms-transition: background-color .3s;
+    transition: background-color .3s;
+}
+.popupBlock {
+    position: absolute;
+    display: none;
+    padding: 10px 20px;
+            
+    -ms-border-radius: 8px; border-radius: 8px;
+    border: 2px #F3B746 solid; 
+            
+    -webkit-box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.75);
+    -o-box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.75);
+    -ms-box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.75);
+    
+    background-color: #ffffff; background-color: rgba(255,255,255,1);
+            
+    z-index: 9;
+}

@@ -1,0 +1,338 @@
+﻿/* Кнопка открытия файлового менеджера */
+#btnFm {
+    position: relative; display: inline-block;
+    width: 25px;height: 25px;
+    margin: 0px 10px 1px 0px; padding: 2px 2px 2px 2px;
+    vertical-align: bottom;
+
+    cursor: pointer;
+    
+    -ms-border-radius: 4px; border-radius: 4px;
+
+    background-image: url('../../Scripts/filemanager/img/btnFmOpen.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /*-webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;*/
+}
+#btnFm:hover {
+    -webkit-box-shadow: 0px 0px 7px 0px #000000; -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0px 0px 7px 0px #000000; -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.9);
+    -o-box-shadow: 0px 0px 7px 0px #000000; -o-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.9);
+    -ms-box-shadow: 0px 0px 7px 0px #000000; -ms-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.9);
+    box-shadow: 0px 0px 7px 0px #000000; box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.9);
+}
+
+/* Обёртка для менеджера */
+div#divFmWrapper {
+    position: absolute;
+    width: 600px;
+    
+    -ms-border-radius: 4px;border-radius: 4px;
+    border: 1px #CCCCCC solid;
+
+    background-color: #ebebeb;
+
+    -webkit-box-shadow: 4px 4px 21px 0px #000000; -webkit-box-shadow: 4px 4px 21px 0px rgba(0,0,0,0.7);
+    -moz-box-shadow: 4px 4px 21px 0px #000000; -moz-box-shadow: 4px 4px 21px 0px rgba(0,0,0,0.7);
+    -o-box-shadow: 4px 4px 21px 0px #000000; -o-box-shadow: 4px 4px 21px 0px rgba(0,0,0,0.7);
+    -ms-box-shadow: 4px 4px 21px 0px #000000; -ms-box-shadow: 4px 4px 21px 0px rgba(0,0,0,0.7);
+    box-shadow: 4px 4px 21px 0px #000000; box-shadow: 4px 4px 21px 0px rgba(0,0,0,0.7);
+
+    z-index: 9;
+}
+
+/* Обёртка для кнопок опций */
+div#divFmOptionsWrapper {
+    position: relative;
+    height: 30px;
+    margin: 2px 2px 2px 2px; padding: 0px 0px 0px 0px;
+    
+    -ms-border-radius: 4px; border-radius: 4px;
+    border: 1px #d2d1d1 solid;
+
+    background: #f2f5f6;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YyZjVmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM3JSIgc3RvcC1jb2xvcj0iI2UzZWFlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjOGQ3ZGMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f5f6), color-stop(37%,#e3eaed), color-stop(100%,#c8d7dc));
+    background: -webkit-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+    background: -o-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+    background: -ms-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+    background: linear-gradient(to bottom,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 );
+}
+
+/* Обёртка для отображения файлов*/
+div#divFmContentWrapper {
+    position: relative;
+    height: 500px;
+    margin: 3px 2px 3px 2px; padding: 0px 0px 0px 0px;
+
+    -ms-border-radius: 2px;border-radius: 2px;
+    border: 1px #e7e7e7 solid;
+
+    background-color: #ffffff;
+
+    overflow-y: scroll;
+}
+/* Обёртка для отображения нижней информационной панели */
+div#divFmInfoWrapper {
+    position: relative;
+    margin: 2px 2px 2px 2px; padding: 5px 5px 5px 10px;
+    
+    -ms-border-radius: 4px; border-radius: 4px;
+    border: 1px #d2d1d1 solid;
+
+    background: #eeeeee;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjY2NjY2MiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc));
+    background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+    background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+    background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+    background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+}
+
+/* Кнопка удалить файл */
+#btnFmDel {
+    position: relative; display: inline-block;
+    width: 25px;height: 25px;
+    margin: 0px 0px 0px 0px; padding: 3px 3px 3px 3px;
+    vertical-align: bottom;
+
+    cursor: pointer;
+    
+    -ms-border-radius: 4px; border-radius: 4px;
+
+    background-image: url('../../Scripts/filemanager/img/btnFmDel.png?v=1');
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    -webkit-transition: all .1s;
+    -moz-transition: all .1s;
+    -o-transition: all .1s;
+    -ms-transition: all .1s;
+    transition: all .1s;
+}
+#btnFmDel:hover {
+    background-color: #b2c6ef;
+}
+#btnFmDel:active {
+    background-color: #ffffff;
+}
+/* Кнопка отображения файлов списком */
+#btnFmListView {
+    position: absolute; display: inline-block;
+    right: 95px;
+    width: 25px;height: 25px;
+    margin: 0px 0px 0px 0px; padding: 3px 3px 3px 3px;
+    vertical-align: bottom;
+
+    cursor: pointer;
+    
+    -ms-border-radius: 4px; border-radius: 4px;
+
+    background-image: url('../../Scripts/filemanager/img/btnFmViewList.png?v=1');
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    -webkit-transition: all .1s;
+    -moz-transition: all .1s;
+    -o-transition: all .1s;
+    -ms-transition: all .1s;
+    transition: all .1s;
+}
+#btnFmListView:hover {
+    background-color: #b2c6ef;
+}
+#btnFmListView:active {
+    background-color: #ffffff;
+}
+
+/* Кнопка отображения файлов плиткой */
+#btnFmTileView {
+    position: absolute; display: inline-block;
+    right: 60px;
+    width: 25px;height: 25px;
+    margin: 0px 0px 0px 0px; padding: 3px 3px 3px 3px;
+    vertical-align: bottom;
+
+    cursor: pointer;
+    
+    -ms-border-radius: 4px; border-radius: 4px;
+
+    background-image: url('../../Scripts/filemanager/img/btnFmViewTile.png?v=1');
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    -webkit-transition: all .1s;
+    -moz-transition: all .1s;
+    -o-transition: all .1s;
+    -ms-transition: all .1s;
+    transition: all .1s;
+}
+#btnFmTileView:hover {
+    background-color: #b2c6ef;
+}
+#btnFmTileView:active {
+    background-color: #ffffff;
+}
+
+/* Кнопка выхода из файлового менеджера */
+#btnFmExit {
+    position: absolute; display: inline-block;
+    right: 0;
+    width: 25px;height: 25px;
+    margin: 0px 0px 0px 0px; padding: 3px 3px 3px 3px;
+    vertical-align: bottom;
+
+    cursor: pointer;
+    
+    -ms-border-radius: 4px; border-radius: 4px;
+
+    background-image: url('../../Scripts/filemanager/img/btnFmExit.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    -webkit-transition: all .1s;
+    -moz-transition: all .1s;
+    -o-transition: all .1s;
+    -ms-transition: all .1s;
+    transition: all .1s;
+}
+#btnFmExit:hover {
+    background-color: #e17878;
+}
+#btnFmExit:active {
+    background-color: #ffffff;
+}
+
+
+/* Обёртка панели с данными по одному файлу для вида - ПЛИТКОЙ */
+div.divFileTileFm {
+    position: relative; display: inline-block;
+    width: 50px;height: 65px;
+    margin: 5px 5px 5px 5px; padding: 5px 5px 5px 5px;
+    vertical-align: top;
+    text-align: center;
+    
+    -ms-border-radius: 2px; border-radius: 2px;
+    border: 1px transparent solid;
+
+    cursor: pointer;
+
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+}
+div.divFileTileFm:hover {
+    background-color: #9de4fc;
+    border: 1px #65afc8 solid;
+}
+
+/*Обертка для иконки файла*/
+div.fileIconWrapper_fm {
+    position: relative; display: block;
+    width: 50px;height: 50px;
+}
+
+/* Иконка файла */
+img.fileIcon_fm {
+    position: relative;
+    width: 50px;
+    max-height: 50px;
+    margin: 0 0 3px 0;
+}
+/* Имя файла */
+span.fName_fm {
+    position: relative;
+    font-family: Calibri;font-size: 10px;font-weight: normal;color: #000000;
+}
+
+/* Обёртка панели с данными по одному файлу для вида - СПИСКОМ */
+div.divFileListFm {
+    position: relative;display: table;
+    height: 50px;width: 97%;
+    margin: 0px 5px 0px 5px; padding: 5px 5px 5px 5px;
+    vertical-align: top;
+    -ms-border-radius: 2px; border-radius: 2px;
+    border: 1px transparent solid;
+
+    cursor: pointer;
+
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+}
+div.divFileListFm:hover {
+    background-color: #9de4fc;
+    border: 1px #65afc8 solid;
+}
+
+img.fileIconList_fm {
+    position: relative;display: table-cell;
+    width: 50px;
+    max-height: 50px;
+    margin: 0 0 3px 0;
+
+    /*border: 1px #000 solid;*/
+}
+span.fNameList_fm {
+    position: relative;display: table-cell;
+    width: 300px;
+    padding: 0px 0px 0px 0px;
+    font-family: Calibri;font-size: 12px;font-weight: normal;color: #000000;
+    text-align: left;vertical-align: middle;
+
+    /*border: 1px #000 solid;*/
+}
+span.fSizeList_fm {
+    position: relative;display: table-cell;
+    width: 70px;
+    padding: 0px 0px 0px 0px;
+    font-family: Calibri;font-size: 12px;font-weight: normal;color: #1f6235;
+    text-align: left;vertical-align: middle;
+
+    /*border: 1px #000 solid;*/
+}
+span.fDateList_fm {
+    position: relative;display: table-cell;
+    width: 120px;
+    padding: 0px 0px 0px 0px;
+    font-family: Calibri;font-size: 12px;font-weight: normal;color: #231f70;
+    text-align: left;vertical-align: middle;
+
+    /*border: 1px #000 solid;*/
+}
+
+/* Класс для претекстов в информационную панель */
+span.fmTxtPre {
+    position: relative;display: inline-block;
+    width: 70px;
+    vertical-align: top;text-align: right;
+    font-family: Calibri;font-size: 13px;font-weight: normal;color: #000000;
+    
+    -ms-text-shadow: 1px 1px 0px #ffffff;text-shadow: 1px 1px 0px #ffffff;
+}
+
+/* Класс для текстов в информационную панель */
+span.fmTxtInfo {
+    position: relative;display: inline-block;
+    /*width: 70px;*/
+    margin: 0 0 0 15px;
+    vertical-align: top;text-align: left;
+    font-family: Calibri;font-size: 13px;font-weight: bold;color: #000000;
+}
+/* Индивидуальный стиль для ссылки */
+#lblHrefFm {
+    color: #bf670e;
+}

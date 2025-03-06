@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/default.aspx" title="Главная" description="Главная страница">
+
+      <siteMapNode url="~/sections/about/about.aspx" title="О нас" description="Страница 'О нас'"/>
+      <siteMapNode url="~/onenews.aspx" title="Полная версия новости" description="Страница 'Полная версия новости'"/>
+      
+      <siteMapNode url="~/sections/museum/about.aspx#main" title="Музей истории Черноморского флота" description="Раздел - Музей истории Черноморского флота">
+        <siteMapNode url="~/sections/museum/about.aspx" title="О музее" description="Страница 'О музее'" />  
+        <siteMapNode url="~/sections/museum/history.aspx" title="История создания" description="Страница 'История создания'" />  
+        <siteMapNode url="~/sections/museum/infrastructure.aspx" title="Инфраструктура" description="Страница 'Инфраструктура'" />  
+        <siteMapNode url="~/sections/museum/fotogallery.aspx" title="Фотогалерея" description="Страница 'Фотогалерея'" />  
+        <siteMapNode url="~/sections/museum/exposure.aspx" title="Экспозиция 'Восстановление исторической справедливости'" description="Страница экспозиции 'Восстановление исторической справедливости'" />  
+      </siteMapNode> 
+      
+      <siteMapNode url="~/sections/project/about.aspx#main" title="'Москва - Крым - Территория талантов'" description="Раздел - 'Москва - Крым - Территория талантов'">
+        <siteMapNode url="~/sections/project/about.aspx" title="О проекте" description="Страница 'О проекте'" />  
+        <siteMapNode url="~/sections/project/history.aspx" title="История проекта" description="Страница 'История проекта'" />
+        <siteMapNode url="~/sections/project/info.aspx" title="Информационное письмо" description="Страница 'Информационное письмо'" />
+        <siteMapNode url="~/sections/project/orgcomitet.aspx" title="Оргкомитет" description="Страница 'Состав оргкомитета'" />
+        <siteMapNode url="~/sections/project/fotogallery.aspx" title="Фотогалерея конкурсов" description="Страница 'Фотогалерея конкурсов'" />
+        <!--<siteMapNode url="~/sections/project/map.aspx" title="География проекта" description="Страница 'География проекта'" />-->
+        <siteMapNode url="~/sections/project/resultsarch.aspx" title="Архив результатов" description="Страница 'Архив результатов'" />
+        <siteMapNode url="~/sections/project/stages.aspx" title="Конкурсы проекта" description="Конкурсы проекта">
+          
+          <siteMapNode url="~/sections/project/competitionfoto/competitionfoto.aspx" title="Конкурс Крымский вернисаж" description="Подраздел - Конкурс 'Крымский вернисаж'">
+            <siteMapNode url="~/sections/project/competitionfoto/competitionfoto.aspx?subname=photo" title="Фотография" description="Конкурс 'Крымский вернисаж', номинация - Фотография">
+              <siteMapNode url="~/sections/project/competitionfoto/reg.aspx?subname=photo" title="Заявка" description="Подача заявки на Конкурс 'Крымский вернисаж', номинация - Фотография"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionfoto/competitionfoto.aspx?subname=izo" title="Изобразительное творчество" description="Конкурс 'Крымский вернисаж', номинация - Изобразительное творчество">
+              <siteMapNode url="~/sections/project/competitionfoto/reg.aspx?subname=izo" title="Заявка" description="Подача заявки на Конкурс 'Крымский вернисаж', номинация - Изобразительное творчество"/>
+            </siteMapNode>
+            <!--<siteMapNode url="~/sections/project/competitionfoto/competitionfoto.aspx?subname=computergraphic" title="Компьютерная графика" description="Конкурс 'Крымский вернисаж', номинация - Компьютерная графика">
+              <siteMapNode url="~/sections/project/competitionfoto/reg.aspx?subname=computergraphic" title="Заявка" description="Подача заявки на Конкурс 'Крымский вернисаж', номинация - Компьютерная графика"/>
+            </siteMapNode>-->
+            <siteMapNode url="~/sections/project/competitionfoto/competitionfoto.aspx?subname=computer_risunok" title="Компьютерный рисунок" description="Конкурс 'Крымский вернисаж', номинация - Компьютерный рисунок">
+              <siteMapNode url="~/sections/project/competitionfoto/reg.aspx?subname=computer_risunok" title="Заявка" description="Подача заявки на Конкурс 'Крымский вернисаж', номинация - Компьютерный рисунок"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionfoto/competitionfoto.aspx?subname=collazh_fotomontazh" title="Коллаж, фотомонтаж" description="Конкурс 'Крымский вернисаж', номинация - Коллаж, фотомонтаж">
+              <siteMapNode url="~/sections/project/competitionfoto/reg.aspx?subname=collazh_fotomontazh" title="Заявка" description="Подача заявки на Конкурс 'Крымский вернисаж', номинация - Коллаж, фотомонтаж"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionfoto/competitionfoto.aspx?subname=dpt1_hud_vyazanie" title="Вязание (одежда, салфетки, игрушка, макраме)" description="Конкурс 'Крымский вернисаж', номинация - Вязание (одежда, салфетки, игрушка, макраме)">
+              <siteMapNode url="~/sections/project/competitionfoto/reg.aspx?subname=dpt1_hud_vyazanie" title="Заявка" description="Подача заявки на Конкурс 'Крымский вернисаж', номинация - Вязание (одежда, салфетки, игрушка, макраме)"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionfoto/competitionfoto.aspx?subname=dpt1_bumagoplastika" title="Бумагопластика" description="Конкурс 'Крымский вернисаж', номинация - Бумагопластика">
+              <siteMapNode url="~/sections/project/competitionfoto/reg.aspx?subname=dpt1_bumagoplastika" title="Заявка" description="Подача заявки на Конкурс 'Крымский вернисаж', номинация - Бумагопластика"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionfoto/competitionfoto.aspx?subname=dpt1_avtor_igrushka" title="Текстиль (тильды, шитье, вышивка)" description="Конкурс 'Крымский вернисаж', номинация - Текстиль (тильды, шитье, вышивка)">
+              <siteMapNode url="~/sections/project/competitionfoto/reg.aspx?subname=dpt1_avtor_igrushka" title="Заявка" description="Подача заявки на Конкурс 'Крымский вернисаж', номинация - Текстиль (тильды, шитье, вышивка)"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionfoto/competitionfoto.aspx?subname=dpt1_biseropletenie" title="Бисероплетение" description="Конкурс 'Крымский вернисаж', номинация - Бисероплетение">
+              <siteMapNode url="~/sections/project/competitionfoto/reg.aspx?subname=dpt1_biseropletenie" title="Заявка" description="Подача заявки на Конкурс 'Крымский вернисаж', номинация - Бисероплетение"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionfoto/competitionfoto.aspx?subname=dpt1_voilokovalyanie" title="Валяние (картины, игрушка)" description="Конкурс 'Крымский вернисаж', номинация - Валяние (картины, игрушка)">
+              <siteMapNode url="~/sections/project/competitionfoto/reg.aspx?subname=dpt1_voilokovalyanie" title="Заявка" description="Подача заявки на Конкурс 'Крымский вернисаж', номинация - Валяние (картины, игрушка)"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionfoto/competitionfoto.aspx?subname=dpt2_keramika" title="Керамика" description="Конкурс 'Крымский вернисаж', номинация - Керамика">
+              <siteMapNode url="~/sections/project/competitionfoto/reg.aspx?subname=dpt2_keramika" title="Заявка" description="Подача заявки на Конкурс 'Крымский вернисаж', номинация - Керамика"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionfoto/competitionfoto.aspx?subname=dpt2_batik" title="Батик" description="Конкурс 'Крымский вернисаж', номинация - Батик">
+              <siteMapNode url="~/sections/project/competitionfoto/reg.aspx?subname=dpt2_batik" title="Заявка" description="Подача заявки на Конкурс 'Крымский вернисаж', номинация - Батик"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionfoto/competitionfoto.aspx?subname=dpt2_dekupazh" title="Декупаж" description="Конкурс 'Крымский вернисаж', номинация - Декупаж">
+              <siteMapNode url="~/sections/project/competitionfoto/reg.aspx?subname=dpt2_dekupazh" title="Заявка" description="Подача заявки на Конкурс 'Крымский вернисаж', номинация - Декупаж"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionfoto/competitionfoto.aspx?subname=dpt2_rospis_poderevu" title="Роспись по дереву" description="Конкурс 'Крымский вернисаж', номинация - Роспись по дереву">
+              <siteMapNode url="~/sections/project/competitionfoto/reg.aspx?subname=dpt2_rospis_poderevu" title="Заявка" description="Подача заявки на Конкурс 'Крымский вернисаж', номинация - Роспись по дереву"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionfoto/competitionfoto.aspx?subname=dtp1_combitehnics" title="Комбинированные техники" description="Конкурс 'Крымский вернисаж', номинация - Комбинированные техники">
+              <siteMapNode url="~/sections/project/competitionfoto/reg.aspx?subname=dtp1_combitehnics" title="Заявка" description="Подача заявки на Конкурс 'Крымский вернисаж', номинация - Комбинированные техники"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionfoto/competitionfoto.aspx?subname=dpt1_plastilonografiya" title="Пластилинография" description="Конкурс 'Крымский вернисаж', номинация - Пластилинография">
+              <siteMapNode url="~/sections/project/competitionfoto/reg.aspx?subname=dpt1_plastilonografiya" title="Заявка" description="Подача заявки на Конкурс 'Крымский вернисаж', номинация - Пластилинография"/>
+            </siteMapNode>
+          </siteMapNode>
+          
+          <!--<siteMapNode url="~/sections/project/competitionliterary/competitionliterary.aspx" title="Литературный конкурс" description="Подраздел - Литературный конкурс 'Москва и Крым глазами современников'">
+            <siteMapNode url="~/sections/project/competitionliterary/competitionliterary.aspx?subname=stihi" title="Стихи" description="Литературный конкурс 'Москва и Крым глазами современников', номинация - Стихи">
+              <siteMapNode url="~/sections/project/competitionliterary/reg.aspx?subname=stihi" title="Заявка" description="Подача заявки на Литературный конкурс 'Москва и Крым глазами современников', номинация - Стихи"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionliterary/competitionliterary.aspx?subname=esse" title="Эссе" description="Литературный конкурс 'Москва и Крым глазами современников', номинация - Эссе">
+              <siteMapNode url="~/sections/project/competitionliterary/reg.aspx?subname=esse" title="Заявка" description="Подача заявки на Литературный конкурс 'Москва и Крым глазами современников', номинация - Эссе"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionliterary/competitionliterary.aspx?subname=rasskaz" title="Рассказ" description="Литературный конкурс 'Москва и Крым глазами современников', номинация - Рассказ">
+              <siteMapNode url="~/sections/project/competitionliterary/reg.aspx?subname=rasskaz" title="Заявка" description="Подача заявки на Литературный конкурс 'Москва и Крым глазами современников', номинация - Рассказ"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionliterary/competitionliterary.aspx?subname=sochinenie" title="Сочинение" description="Литературный конкурс 'Москва и Крым глазами современников', номинация - Сочинение">
+              <siteMapNode url="~/sections/project/competitionliterary/reg.aspx?subname=sochinenie" title="Заявка" description="Подача заявки на Литературный конкурс 'Москва и Крым глазами современников', номинация - Сочинение"/>
+            </siteMapNode>
+          </siteMapNode>-->
+          
+          <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx" title="Мастер сцены" description="Подраздел - Конкурс творческого мастерства 'Мастер сцены'">
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=hudslovo" title="Художественное слово" description="Конкурс 'Мастер сцены', номинация - Художественное слово">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=hudslovo" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Художественное слово"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=insrumzanransambli" title="Инструментальный жанр: ансамбли" description="Конкурс 'Мастер сцены', номинация - Инструментальный жанр: ансамбли">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=insrumzanransambli" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Инструментальный жанр: ансамбли"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=insrumzanrduhovieudarninstrum" title="Инструментальный жанр: духовые и ударные инструменты" description="Конкурс 'Мастер сцены', номинация - Инструментальный жанр: духовые и ударные инструменты">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=insrumzanrduhovieudarninstrum" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Инструментальный жанр: духовые и ударные инструменты"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=insrumzanrfortepiano" title="Инструментальный жанр: фортепиано" description="Конкурс 'Мастер сцены', номинация - Инструментальный жанр: фортепиано">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=insrumzanrfortepiano" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Инструментальный жанр: фортепиано"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=insrumzanrgitara" title="Инструментальный жанр: гитара" description="Конкурс 'Мастер сцены', номинация - Инструментальный жанр: гитара">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=insrumzanrgitara" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Инструментальный жанр: гитара"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=insrumzanrnarodnieinstrum" title="Инструментальный жанр: народные инструменты" description="Конкурс 'Мастер сцены', номинация - Инструментальный жанр: народные инструменты">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=insrumzanrnarodnieinstrum" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Инструментальный жанр: народные инструменты"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=insrumzanrorkestri" title="Инструментальный жанр: оркестры" description="Конкурс 'Мастер сцены', номинация - Инструментальный жанр: оркестры">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=insrumzanrorkestri" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Инструментальный жанр: оркестры"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=insrumzanrsintezator" title="Инструментальный жанр: синтезатор" description="Конкурс 'Мастер сцены', номинация - Инструментальный жанр: синтезатор">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=insrumzanrsintezator" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Инструментальный жанр: синтезатор"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=insrumzanrstrunnosmichkovieinstrumenti" title="Инструментальный жанр: струнно - смычковые инструменты" description="Конкурс 'Мастер сцены', номинация - Инструментальный жанр: струнно-смычковые инструменты">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=insrumzanrstrunnosmichkovieinstrumenti" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Инструментальный жанр: струнно-смычковые инструменты"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=teatriskuslitmuzkom" title="Театральное искусство: Литературно - музыкальная композиция" description="Конкурс 'Мастер сцены', номинация - Театральное искусство: Литературно-музыкальная композиция">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=teatriskuslitmuzkom" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Театральное искусство: Литературно-музыкальная композиция"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=teatriskusspekt" title="Театральное искусство: Спектакль" description="Конкурс 'Мастер сцены', номинация - Театральное искусство: Спектакль">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=teatriskusspekt" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Театральное искусство: Спектакль"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=teatriskusmultiganr" title="Театральное искусство: Мультижанр" description="Конкурс 'Мастер сцены', номинация - Театральное искусство: Мультижанр">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=teatriskusmultiganr" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Театральное искусство: Мультижанр"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=vokalakademvokal" title="Вокал: академический вокал" description="Конкурс 'Мастер сцены', номинация - Вокал: академический вокал">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=vokalakademvokal" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Вокал: академический вокал"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=vokalestradvokal" title="Вокал: эстрадный вокал" description="Конкурс 'Мастер сцены', номинация - Вокал: эстрадный вокал">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=vokalestradvokal" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Вокал: эстрадный вокал"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=vokalfolklor" title="Вокал: фольклор" description="Конкурс 'Мастер сцены', номинация - Вокал: фольклор">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=vokalfolklor" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Вокал: фольклор"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=xoreoclassichtanets" title="Хореография: классический танец" description="Конкурс 'Мастер сцены', номинация - Хореография: классический танец">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=xoreoclassichtanets" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Хореография: классический танец"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=xoreonarodtanets" title="Хореография: народный танец" description="Конкурс 'Мастер сцены', номинация - Хореография: народный танец">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=xoreonarodtanets" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Хореография: народный танец"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=xoreostilnarodtanets" title="Хореография: стилизованный народный танец" description="Конкурс 'Мастер сцены', номинация - Хореография: стилизованный народный танец">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=xoreostilnarodtanets" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Хореография: стилизованный народный танец"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=xoreoestradtanets" title="Хореография: эстрадный танец" description="Конкурс 'Мастер сцены', номинация - Хореография: эстрадный танец">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=xoreoestradtanets" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Хореография: эстрадный танец"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=xoreosovremtanets" title="Хореография: современный танец" description="Конкурс 'Мастер сцены', номинация - Хореография: современный танец">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=xoreosovremtanets" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Хореография: современный танец"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=xoreobalniytanets" title="Хореография: бальный танец" description="Конкурс 'Мастер сцены', номинация - Хореография: бальный танец">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=xoreobalniytanets" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Хореография: бальный танец"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=xoreocirciskus" title="Хореография: цирковое искусство" description="Конкурс 'Мастер сцены', номинация - Хореография: цирковое искусство">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=xoreocirciskus" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Хореография: цирковое искусство"/>
+            </siteMapNode>
+            <!--<siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=xoreocherliding" title="Хореография: черлидинг" description="Конкурс 'Мастер сцены', номинация - Хореография: черлидинг">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=xoreocherliding" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Хореография: черлидинг"/>
+            </siteMapNode>-->
+            <siteMapNode url="~/sections/project/competitiontheatre/competitiontheatre.aspx?subname=xoreokadeti" title="Хореография: кадеты" description="Конкурс 'Мастер сцены', номинация - Хореография: кадеты">
+              <siteMapNode url="~/sections/project/competitiontheatre/reg.aspx?subname=xoreokadeti" title="Заявка" description="Подача заявки на Конкурс 'Мастер сцены', номинация - Хореография: кадеты"/>
+            </siteMapNode>
+          </siteMapNode>
+          
+          <siteMapNode url="~/sections/project/competitionsport/competitionsport.aspx" title="Спортивные турниры" description="Подраздел - Спортивные турниры">
+            <siteMapNode url="~/sections/project/competitionsport/competitionsport.aspx?subname=prostedinoborstva" title="Простейшие единоборства" description="Спортивный турнир 'В единстве наша сила', номинация - Простейшие единоборства">
+              <siteMapNode url="~/sections/project/competitionsport/reg.aspx?subname=prostedinoborstva" title="Заявка" description="Подача заявки на cпортивный турнир 'В единстве наша сила', номинация - Простейшие единоборства"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionsport/competitionsport.aspx?subname=boks" title="Бокс" description="Спортивный турнир 'В единстве наша сила', номинация - Бокс">
+              <siteMapNode url="~/sections/project/competitionsport/reg.aspx?subname=boks" title="Заявка" description="Подача заявки на cпортивный турнир 'В единстве наша сила', номинация - Бокс"/>
+            </siteMapNode>
+            <!--<siteMapNode url="~/sections/project/competitionsport/competitionsport.aspx?subname=kungfu" title="Кунг-фу УИ" description="Спортивный турнир 'В единстве наша сила', номинация - Кунг-фу УИ">
+              <siteMapNode url="~/sections/project/competitionsport/reg.aspx?subname=kungfu" title="Заявка" description="Подача заявки на cпортивный турнир 'В единстве наша сила', номинация - Кунг-фу УИ"/>
+            </siteMapNode>-->
+                 <siteMapNode url="~/sections/project/competitionsport/competitionsport.aspx?subname=shahmaty" title="Шахматы" description="Спортивные турниры, номинация - Шахматы">
+              <siteMapNode url="~/sections/project/competitionsport/reg.aspx?subname=shahmaty" title="Заявка" description="Подача заявки на Спортивные турниры, номинация - Шахматы"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionsport/competitionsport.aspx?subname=shashki" title="Шашки" description="Спортивные турниры, номинация - Шашки">
+              <siteMapNode url="~/sections/project/competitionsport/reg.aspx?subname=shashki" title="Заявка" description="Подача заявки на Спортивные турниры, номинация - Шашки"/>
+            </siteMapNode>
+              <siteMapNode url="~/sections/project/competitionsport/competitionsport.aspx?subname=stendstrelba" title="Тактический лазертаг" description="Спортивные турниры, номинация - Тактический лазертаг">
+              <siteMapNode url="~/sections/project/competitionsport/reg.aspx?subname=stendstrelba" title="Заявка" description="Подача заявки на Спортивные турниры, номинация - Тактический лазертаг"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionsport/competitionsport.aspx?subname=football" title="Футбол" description="Спортивные турниры, номинация - Футбол">
+              <siteMapNode url="~/sections/project/competitionsport/reg.aspx?subname=football" title="Заявка" description="Подача заявки на Спортивные турниры, номинация - Футбол"/>
+            </siteMapNode>
+            <!--
+            <siteMapNode url="~/sections/project/competitionsport/competitionsport.aspx?subname=basketball" title="Баскетбол" description="Спортивные турниры, номинация - Баскетбол">
+              <siteMapNode url="~/sections/project/competitionsport/reg.aspx?subname=basketball" title="Заявка" description="Подача заявки на Спортивные турниры, номинация - Баскетбол"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionsport/competitionsport.aspx?subname=volleyball" title="Волейбол" description="Спортивные турниры, номинация - Волейбол">
+              <siteMapNode url="~/sections/project/competitionsport/reg.aspx?subname=volleyball" title="Заявка" description="Подача заявки на Спортивные турниры, номинация - Волейбол"/>
+            </siteMapNode>
+            -->
+          </siteMapNode>
+          
+          <siteMapNode url="~/sections/project/competitionrobotech/competitionrobotech.aspx" title="Робототехника" description="Подраздел - Конкурс по Робототехнике и моделированию 3D ручкой 'Шаг в будущее'">
+            <siteMapNode url="~/sections/project/competitionrobotech/competitionrobotech.aspx?subname=robototechnika" title="Моделирование и конструирование" description="Конкурс по Робототехнике и моделированию 3D ручкой 'Шаг в будущее', номинация - Моделирование и конструирование">
+              <siteMapNode url="~/sections/project/competitionrobotech/reg.aspx?subname=robototechnika" title="Заявка" description="Подача заявки на Конкурс по Робототехнике и моделированию 3D ручкой 'Шаг в будущее', номинация - Моделирование и конструирование"/>
+            </siteMapNode>
+           <siteMapNode url="~/sections/project/competitionrobotech/competitionrobotech.aspx?subname=robototechnikaproject" title="Роботехнический проект" description="Конкурс по Робототехнике и моделированию 3D ручкой 'Шаг в будущее', номинация - Роботехнический проект">
+              <siteMapNode url="~/sections/project/competitionrobotech/reg.aspx?subname=robototechnikaproject" title="Заявка" description="Подача заявки на Конкурс по Робототехнике и моделированию 3D ручкой 'Шаг в будущее', номинация - Роботехнический проект"/>
+            </siteMapNode>
+           <siteMapNode url="~/sections/project/competitionrobotech/competitionrobotech.aspx?subname=robototechnika3dmodel" title="Создание объемных моделей 3D ручкой" description="Конкурс по Робототехнике и моделированию 3D ручкой 'Шаг в будущее', номинация - Создание объемных моделей 3D ручкой">
+              <siteMapNode url="~/sections/project/competitionrobotech/reg.aspx?subname=robototechnika3dmodel" title="Заявка" description="Подача заявки на Конкурс по Робототехнике и моделированию 3D ручкой 'Шаг в будущее', номинация - Создание объемных моделей 3D ручкой"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionrobotech/competitionrobotech.aspx?subname=tinkercad" title="Создание объемных моделей в Tinkercad" description="Конкурс по Робототехнике и моделированию 3D ручкой 'Шаг в будущее', номинация - Создание объемных моделей в Tinkercad">
+              <siteMapNode url="~/sections/project/competitionrobotech/reg.aspx?subname=tinkercad" title="Заявка" description="Подача заявки на Конкурс по Робототехнике и моделированию 3D ручкой 'Шаг в будущее', номинация - Создание объемных моделей в Tinkercad"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionrobotech/competitionrobotech.aspx?subname=programmproject" title="Программный проект" description="Конкурс по Робототехнике и моделированию 3D ручкой 'Шаг в будущее', номинация - Программный проект">
+              <siteMapNode url="~/sections/project/competitionrobotech/reg.aspx?subname=programmproject" title="Заявка" description="Подача заявки на Конкурс по Робототехнике и моделированию 3D ручкой 'Шаг в будущее', номинация - Программный проект"/>
+            </siteMapNode>
+          </siteMapNode>
+            
+          <siteMapNode url="~/sections/project/competitionkultura/competitionkultura.aspx" title="Конкурс творческих и исследовательских работ 'Открытый мир' на английском языке" description="Подраздел - Конкурс творческих и исследовательских работ 'Открытый мир'">
+            <!--<siteMapNode url="~/sections/project/competitionkultura/competitionkultura.aspx?subname=vossoedcrimasrossiei" title="Крым с нами!" description="Конкурс исследовательских работ обучающихся 'Культурное наследие', номинация - Крым с нами!">
+              <siteMapNode url="~/sections/project/competitionkultura/reg.aspx?subname=vossoedcrimasrossiei" title="Заявка" description="Подача заявки на Конкурс исследовательских работ обучающихся 'Культурное наследие', номинация - Крым с нами!"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionkultura/competitionkultura.aspx?subname=zashitaobsihgranits" title="На защите общих границ" description="Конкурс исследовательских работ обучающихся 'Культурное наследие', номинация - На защите общих границ ">
+              <siteMapNode url="~/sections/project/competitionkultura/reg.aspx?subname=zashitaobsihgranits" title="Заявка" description="Подача заявки на Конкурс исследовательских работ обучающихся 'Культурное наследие', номинация - На защите общих границ "/>
+            </siteMapNode>-->
+            <!--<siteMapNode url="~/sections/project/competitionkultura/competitionkultura.aspx?subname=k75letiyu" title="75-я годовщина Победы в Великой Отечественной Войне" description="Конкурс исследовательских работ обучающихся 'Культурное наследие', номинация - 75-я годовщина Победы в Великой Отечественной Войне">
+              <siteMapNode url="~/sections/project/competitionkultura/reg.aspx?subname=k75letiyu" title="Заявка" description="Подача заявки на Конкурс исследовательских работ обучающихся 'Культурное наследие', номинация - 75-я годовщина Победы в Великой Отечественной Войне"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionkultura/competitionkultura.aspx?subname=kultrnnaslediecrima" title="Наследие Крыма и города Севастополя" description="Конкурс исследовательских работ обучающихся 'Культурное наследие', номинация - Наследие Крыма и города Севастополя">
+              <siteMapNode url="~/sections/project/competitionkultura/reg.aspx?subname=kultrnnaslediecrima" title="Заявка" description="Подача заявки на Конкурс исследовательских работ обучающихся 'Культурное наследие', номинация - Наследие Крыма и города Севастополя"/>
+            </siteMapNode>-->
+            <!--<siteMapNode url="~/sections/project/competitionkultura/competitionkultura.aspx?subname=krimskymostvsz" title="Наследие Крыма и города Севастополя" description="Конкурс исследовательских работ обучающихся 'Культурное наследие', номинация - 'Крымский мост. Вчера. Сегодня. Завтра'">
+              <siteMapNode url="~/sections/project/competitionkultura/reg.aspx?subname=krimskymostvsz" title="Заявка" description="Подача заявки на Конкурс исследовательских работ обучающихся 'Культурное наследие', номинация - 'Крымский мост. Вчера. Сегодня. Завтра'"/>
+            </siteMapNode>-->
+            <!--<siteMapNode url="~/sections/project/competitionkultura/competitionkultura.aspx?subname=iseecrimea" title="I see Crimea... (Я вижу Крым...)" description="Конкурс исследовательских работ обучающихся 'Культурное наследие', номинация - I see Crimea... (Я вижу Крым...)">
+              <siteMapNode url="~/sections/project/competitionkultura/reg.aspx?subname=iseecrimea" title="Заявка" description="Подача заявки на Конкурс исследовательских работ обучающихся 'Культурное наследие', номинация - I see Crimea... (Я вижу Крым...)"/>
+            </siteMapNode>-->
+            <!--<siteMapNode url="~/sections/project/competitionkultura/competitionkultura.aspx?subname=presentaionru" title="Конкурс презентаций на русском языке 'Москва – Крым'" description="Конкурс творческих и исследовательских работ 'Открытый мир', номинация - Конкурс презентаций на русском языке 'Москва – Крым'">
+              <siteMapNode url="~/sections/project/competitionkultura/reg.aspx?subname=presentaionru" title="Заявка" description="Подача заявки на Конкурс творческих и исследовательских работ 'Открытый мир', номинация - Конкурс презентаций на русском языке 'Москва – Крым'"/>
+            </siteMapNode>-->
+            <!--<siteMapNode url="~/sections/project/competitionkultura/competitionkultura.aspx?subname=publishinstagram" title="Конкурс публикаций на английском языке в 'Instagram'" description="Конкурс творческих и исследовательских работ 'Открытый мир', номинация - Конкурс публикаций на английском языке в 'Instagram'">
+              <siteMapNode url="~/sections/project/competitionkultura/reg.aspx?subname=publishinstagram" title="Заявка" description="Подача заявки на Конкурс творческих и исследовательских работ 'Открытый мир', номинация - Конкурс публикаций на английском языке в 'Instagram'"/>
+            </siteMapNode>-->
+            <siteMapNode url="~/sections/project/competitionkultura/competitionkultura.aspx?subname=iSeeCrimeaEn" title="Конкурс эссе I see Crimea... (Я вижу Крым...) на английском языке" description="Конкурс творческих и исследовательских работ 'Открытый мир', номинация - Конкурс эссе I see Crimea... (Я вижу Крым...) на английском языке">
+              <siteMapNode url="~/sections/project/competitionkultura/reg.aspx?subname=iSeeCrimeaEn" title="Заявка" description="Подача заявки на Конкурс творческих и исследовательских работ 'Открытый мир', номинация - Конкурс эссе I see Crimea... (Я вижу Крым...) на английском языке"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionkultura/competitionkultura.aspx?subname=presentaionEn" title="Конкурс презентаций на английском языке 'Москва – Крым'" description="Конкурс творческих и исследовательских работ 'Открытый мир', номинация - Конкурс презентаций на английском языке 'Москва – Крым'">
+              <siteMapNode url="~/sections/project/competitionkultura/reg.aspx?subname=presentaionEn" title="Заявка" description="Подача заявки на Конкурс творческих и исследовательских работ 'Открытый мир', номинация - Конкурс презентаций на английском языке 'Москва – Крым'"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionkultura/competitionkultura.aspx?subname=audioGaid" title="Конкурс аудиогидов по туристическим маршрутам на английском языке 'Москва-Крым'" description="Конкурс творческих и исследовательских работ 'Открытый мир', номинация - Конкурс аудиогидов по туристическим маршрутам на английском языке 'Москва-Крым'">
+              <siteMapNode url="~/sections/project/competitionkultura/reg.aspx?subname=audioGaid" title="Заявка" description="Подача заявки на Конкурс творческих и исследовательских работ 'Открытый мир', номинация - Конкурс аудиогидов по туристическим маршрутам на английском языке 'Москва-Крым'"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionkultura/competitionkultura.aspx?subname=publishVkontakte" title="Конкурс публикаций на английском языке в 'Vkontakte'" description="Конкурс творческих и исследовательских работ 'Открытый мир', номинация - Конкурс публикаций на английском языке в 'Vkontakte'">
+              <siteMapNode url="~/sections/project/competitionkultura/reg.aspx?subname=publishVkontakte" title="Заявка" description="Подача заявки на Конкурс творческих и исследовательских работ 'Открытый мир', номинация - Конкурс публикаций на английском языке в 'Vkontakte'"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionkultura/competitionkultura.aspx?subname=intellektualKviz" title="Интеллектуальный квиз 'I see Crimea...'" description="Конкурс творческих и исследовательских работ 'Открытый мир', номинация - Интеллектуальный квиз 'I see Crimea...'">
+              <siteMapNode url="~/sections/project/competitionkultura/reg.aspx?subname=intellektualKviz" title="Заявка" description="Подача заявки на Конкурс творческих и исследовательских работ 'Открытый мир', номинация - Интеллектуальный квиз 'I see Crimea...'"/>
+            </siteMapNode>
+          </siteMapNode>
+          <!--<siteMapNode url="~/sections/project/competitiontoponim/competitiontoponim.aspx" title="Топонимика" description="Подраздел - Конкурс 'Черноморский флот Великой Отечественной войны в топонимике городов России'">
+            <siteMapNode url="~/sections/project/competitiontoponim/competitiontoponim.aspx?subname=toponimika" title="Топонимика городов России" description="Конкурс 'Черноморский флот Великой Отечественной войны в топонимике городов России', номинация - Топонимика городов России">
+              <siteMapNode url="~/sections/project/competitiontoponim/reg.aspx?subname=toponimika" title="Заявка" description="Подача заявки на Конкурс 'Черноморский флот Великой Отечественной войны в топонимике городов России', номинация - Топонимика городов России"/>
+            </siteMapNode>
+          </siteMapNode>-->
+
+          <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx" title="Конкурс мультимедийных проектов «Герой войны, достойный Славы, любимый город Севастополь!»" description="Подраздел - Конкурс мультимедийных проектов «Герой войны, достойный Славы, любимый город Севастополь!»">
+            <!--<siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=uniygeroi" title="Юный герой - пример для подражания" description="Конкурс мультимедийных проектов 'Наследие адмирала П.С. Нахимова', номинация - Юный герой - пример для подражания">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=uniygeroi" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов 'Наследие адмирала П.С. Нахимова', номинация - Юный герой - пример для подражания"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=uniyzashitnik" title="Наследие адмирала П.С. Нахимова" description="Конкурс мультимедийных проектов 'Наследие адмирала П.С. Нахимова', номинация - Наследие адмирала П.С. Нахимова">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=uniyzashitnik" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов 'Наследие адмирала П.С. Нахимова', номинация - Наследие адмирала П.С. Нахимова"/>
+            </siteMapNode>-->
+            <!--<siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=characteristica" title="Характеристика личности Нахимова, причины её становления и формирования" description="Конкурс мультимедийных проектов 'Наследие адмирала П.С. Нахимова', номинация - Характеристика личности Нахимова, причины её становления и формирования">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=characteristica" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов 'Наследие адмирала П.С. Нахимова', номинация - Характеристика личности Нахимова, причины её становления и формирования"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=prichinietapi" title="Причины и этапы становления личности Нахимова как флотоводца и адмирала" description="Конкурс мультимедийных проектов 'Наследие адмирала П.С. Нахимова', номинация - Причины и этапы становления личности Нахимова как флотоводца и адмирала">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=prichinietapi" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов 'Наследие адмирала П.С. Нахимова', номинация - Причины и этапы становления личности Нахимова как флотоводца и адмирала"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=rolvistorii" title="Роль Нахимова в мировой и отечественной истории" description="Конкурс мультимедийных проектов 'Наследие адмирала П.С. Нахимова', номинация - Роль Нахимова в мировой и отечественной истории">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=rolvistorii" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов 'Наследие адмирала П.С. Нахимова', номинация - Роль Нахимова в мировой и отечественной истории"/>
+            </siteMapNode>-->
+            <!--
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=podandreevskimflagom" title="Под Адреевским флагом..." description="Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Под Адреевским флагом...">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=podandreevskimflagom" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Под Адреевским флагом..."/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=pomoryampovolnam" title="По морям, по волнам..." description="Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - По морям, по волнам...">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=pomoryampovolnam" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - По морям, по волнам..."/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=korablimorykimore" title="Корабли, моряки и море..." description="Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Корабли, моряки и море...">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=korablimorykimore" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Корабли, моряки и море..."/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=nadevaemmitelnyashku" title="Надеваем мы тельняшку!" description="Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Надеваем мы тельняшку!">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=nadevaemmitelnyashku" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Надеваем мы тельняшку!"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=chernomorskomurossiiposvyashaetsa" title="Черноморскому России посвящается..." description="Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Черноморскому России посвящается...">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=chernomorskomurossiiposvyashaetsa" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Черноморскому России посвящается..."/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=metodicheskierazrabotki" title="Методические разработки" description="Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Методические разработки">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=metodicheskierazrabotki" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Методические разработки"/>
+            </siteMapNode>
+            -->
+            <!--
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=morepobedkolibelsmelchakov" title="Море побед - колыбель смельчаков!" description="Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Море побед - колыбель смельчаков!">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=morepobedkolibelsmelchakov" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Море побед - колыбель смельчаков!"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=netzapyatihtolkotochki" title="Нет запятых, только чёрные точки" description="Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Нет запятых, только чёрные точки">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=netzapyatihtolkotochki" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Нет запятых, только чёрные точки"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=vashipodvigineumrut" title="Ваши подвиги в легендах не умрут" description="Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Ваши подвиги в легендах не умрут">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=vashipodvigineumrut" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Ваши подвиги в легендах не умрут"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=sevastopol44" title="Севастополь. Год сорок четвёртый. Вместо улиц камни да зола" description="Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Севастополь. Год сорок четвёртый. Вместо улиц камни да зола">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=sevastopol44" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Севастополь. Год сорок четвёртый. Вместо улиц камни да зола"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=nadevaemmitelnyashku" title="Надеваем мы тельняшку!" description="Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Надеваем мы тельняшку!">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=nadevaemmitelnyashku" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Надеваем мы тельняшку!"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=klyatvudaemsevastopolvernem" title="Клятву даём: Севастополь вернём!" description="Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Клятву даём: Севастополь вернём!">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=klyatvudaemsevastopolvernem" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Клятву даём: Севастополь вернём!"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=hranitalbomsemeinipamyat" title="Хранит альбом семейный память" description="Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Хранит альбом семейный память">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=hranitalbomsemeinipamyat" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Хранит альбом семейный память"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=ihpamaytuzivushiipoklonis" title="Их памяти, живущий, поклонись" description="Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Их памяти, живущий, поклонись">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=ihpamaytuzivushiipoklonis" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Их памяти, живущий, поклонись"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=multimediinieizdaniya" title="Мультимедийные издания" description="Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Мультимедийные издания">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=multimediinieizdaniya" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Овеян славой легендарной…», номинация - Мультимедийные издания"/>
+            </siteMapNode>
+            -->
+
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=yarisuupobedy" title="Я рисую Победу" description="Конкурс мультимедийных проектов «Герой войны, достойный Славы, любимый город Севастополь!», номинация - Я рисую Победу">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=yarisuupobedy" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Герой войны, достойный Славы, любимый город Севастополь!», номинация - Я рисую Победу"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=spesneirpobede" title="С песней к Победе" description="Конкурс мультимедийных проектов «Герой войны, достойный Славы, любимый город Севастополь!», номинация - С песней к Победе">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=spesneirpobede" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Герой войны, достойный Славы, любимый город Севастополь!», номинация - С песней к Победе"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=geroyamotserdca" title="Героям - от сердца" description="Конкурс мультимедийных проектов «Герой войны, достойный Славы, любимый город Севастополь!», номинация - Героям - от сердца">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=geroyamotserdca" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Герой войны, достойный Славы, любимый город Севастополь!», номинация - Героям - от сердца"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=plechomkplechu" title="В одном строю, плечом к плечу мы шли к Победе!" description="Конкурс мультимедийных проектов «Герой войны, достойный Славы, любимый город Севастополь!», номинация - В одном строю, плечом к плечу мы шли к Победе!">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=plechomkplechu" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Герой войны, достойный Славы, любимый город Севастополь!», номинация - В одном строю, плечом к плечу мы шли к Победе!"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionmultimedia/competitionmultimedia.aspx?subname=pamyatsilneevremeni" title="Память сильнее времени" description="Конкурс мультимедийных проектов «Герой войны, достойный Славы, любимый город Севастополь!», номинация - Память сильнее времени">
+              <siteMapNode url="~/sections/project/competitionmultimedia/reg.aspx?subname=pamyatsilneevremeni" title="Заявка" description="Подача заявки на Конкурс мультимедийных проектов «Герой войны, достойный Славы, любимый город Севастополь!», номинация - Память сильнее времени"/>
+            </siteMapNode>
+
+          </siteMapNode>
+          <siteMapNode url="~/sections/project/competitionvmestesila/competitionvmestesila.aspx" title="Фестиваль-конкурс 'Вместе мы сильнее!'" description="Подраздел - Фестиваль-конкурс 'Вместе мы сильнее!'">
+            <siteMapNode url="~/sections/project/competitionvmestesila/competitionvmestesila.aspx?subname=hudSlovo" title="Художественное слово" description="Фестиваль-конкурс 'Вместе мы сильнее', номинация - Художественное слово">
+              <siteMapNode url="~/sections/project/competitionvmestesila/reg.aspx?subname=hudSlovo" title="Заявка" description="Подача заявки на Фестиваль-конкурс 'Вместе мы сильнее!', номинация - Художественное слово"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionvmestesila/competitionvmestesila.aspx?subname=horeographia" title="Хореография" description="Фестиваль-конкурс 'Вместе мы сильнее!', номинация - Хореография">
+              <siteMapNode url="~/sections/project/competitionvmestesila/reg.aspx?subname=horeographia" title="Заявка" description="Подача заявки на Фестиваль-конкурс 'Вместе мы сильнее!', номинация - Хореография"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionvmestesila/competitionvmestesila.aspx?subname=vokal" title="Вокал" description="Фестиваль-конкурс 'Вместе мы сильнее!', номинация - Вокал">
+              <siteMapNode url="~/sections/project/competitionvmestesila/reg.aspx?subname=vokal" title="Заявка" description="Подача заявки на Фестиваль-конкурс 'Вместе мы сильнее!', номинация - Вокал"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionvmestesila/competitionvmestesila.aspx?subname=instrumental" title="Инструментальный жанр" description="Фестиваль 'Вместе мы сильнее!', номинация - Инструментальный жанр">
+              <siteMapNode url="~/sections/project/competitionvmestesila/reg.aspx?subname=instrumental" title="Заявка" description="Подача заявки на Фестиваль 'Вместе мы сильнее!', номинация - Инструментальный жанр"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionvmestesila/competitionvmestesila.aspx?subname=theatre" title="Театральный жанр" description="Фестиваль 'Вместе мы сильнее!', номинация - Театральный жанр">
+              <siteMapNode url="~/sections/project/competitionvmestesila/reg.aspx?subname=theatre" title="Заявка" description="Подача заявки на Фестиваль 'Вместе мы сильнее!', номинация - Театральный жанр"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionvmestesila/competitionvmestesila.aspx?subname=masterMakeup" title="Мастер макияжа" description="Фестиваль 'Вместе мы сильнее!', номинация - Мастер макияжа">
+              <siteMapNode url="~/sections/project/competitionvmestesila/reg.aspx?subname=masterMakeup" title="Заявка" description="Подача заявки на Фестиваль 'Вместе мы сильнее!', номинация - Мастер макияжа"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionvmestesila/competitionvmestesila.aspx?subname=masterShair" title="Парикмахерское искусство" description="Фестиваль 'Вместе мы сильнее!', номинация - Парикмахерское искусство">
+              <siteMapNode url="~/sections/project/competitionvmestesila/reg.aspx?subname=masterShair" title="Заявка" description="Подача заявки на Фестиваль 'Вместе мы сильнее!', номинация - Парикмахерское искусство"/>
+            </siteMapNode>
+          </siteMapNode>
+          <siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx" title="Конкурс 'Индустрия моды'" description="Подраздел - Конкурс 'Индустрия моды'">
+            <siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=chudoLoskutkiIgrushkiKukliTvorRisunok" title="Чудесные лоскутки. Добрые игрушки и куклы. Творческий рисунок" description="Конкурс 'Индустрия моды', номинация - Чудесные лоскутки. Добрые игрушки и куклы. Творческий рисунок">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=chudoLoskutkiIgrushkiKukliTvorRisunok" title="Заявка" description="Подача заявки на Конкурс 'Индустрия моды', номинация - Чудесные лоскутки. Добрые игрушки и куклы. Творческий рисунок"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=chudoLoskutkiIgrushkiKukli" title="Чудесные лоскутки. Добрые игрушки и куклы" description="Конкурс 'Индустрия моды', номинация - Чудесные лоскутки. Добрые игрушки и куклы">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=chudoLoskutkiIgrushkiKukli" title="Заявка" description="Подача заявки на Конкурс 'Индустрия моды', номинация - Чудесные лоскутки. Добрые игрушки и куклы"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=uniyKuturieTkan" title="Юный кутюрье. Ткань" description="Конкурс 'Индустрия моды', номинация - Юный кутюрье. Ткань">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=uniyKuturieTkan" title="Заявка" description="Подача заявки на Конкурс 'Индустрия моды', номинация - Юный кутюрье. Ткань"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=uniyKuturieNetradicMaterial" title="Юный кутюрье. Нетрадиционные материалы" description="Конкурс 'Индустрия моды', номинация - Юный кутюрье. Нетрадиционные материалы">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=uniyKuturieNetradicMaterial" title="Заявка" description="Подача заявки на Конкурс 'Индустрия моды', номинация - Юный кутюрье. Нетрадиционные материалы"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=uniyKuturieFashion" title="Юный кутюрье. Fashion иллюстрация" description="Конкурс 'Индустрия моды', номинация - Юный кутюрье. Fashion иллюстрация">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=uniyKuturieFashion" title="Заявка" description="Подача заявки на Конкурс 'Индустрия моды', номинация - Юный кутюрье. Fashion иллюстрация"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=uniyKuturieTechRisunok" title="Юный кутюрье. Технический рисунок" description="Конкурс 'Индустрия моды', номинация - Юный кутюрье. Технический рисунок">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=uniyKuturieTechRisunok" title="Заявка" description="Подача заявки на Конкурс 'Индустрия моды', номинация - Юный кутюрье. Технический рисунок"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=uniyKuturieFoodArt" title="Юный кутюрье. Фуд-арт и fashion-дизайн" description="Конкурс 'Индустрия моды', номинация - Юный кутюрье. Фуд-арт и fashion-дизайн">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=uniyKuturieFoodArt" title="Заявка" description="Подача заявки на Конкурс 'Индустрия моды', номинация - Юный кутюрье. Фуд-арт и fashion-дизайн"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=uniyKuturieOgorod" title="Юный кутюрье. Модный огород на подоконнике" description="Конкурс 'Индустрия моды', номинация - Юный кутюрье. Модный огород на подоконнике">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=uniyKuturieOgorod" title="Заявка" description="Подача заявки на Конкурс 'Индустрия моды', номинация - Юный кутюрье. Модный огород на подоконнике"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=uniyKuturieBeauty" title="Юный кутюрье. Beauty-меню: блюда с микрозеленью" description="Конкурс 'Индустрия моды', номинация - Юный кутюрье. Beauty-меню: блюда с микрозеленью">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=uniyKuturieBeauty" title="Заявка" description="Подача заявки на Конкурс 'Индустрия моды', номинация - Юный кутюрье. Beauty-меню: блюда с микрозеленью"/>
+            </siteMapNode>
+
+            <!--<siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=eskiziModelierTvorRisunok" title="Эскизы для модельера. Творческий рисунок" description="Конкурс 'Индустрия моды', номинация - Эскизы для модельера. Творческий рисунок">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=eskiziModelierTvorRisunok" title="Заявка" description="Подача заявки на Конкурс 'Индустрия моды', номинация - Эскизы для модельера. Творческий рисунок"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=eskiziModelierFashion" title="Эскизы для модельера. Fashion иллюстрация" description="Конкурс 'Индустрия моды', номинация - Эскизы для модельера. Fashion иллюстрация">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=eskiziModelierFashion" title="Заявка" description="Подача заявки на Конкурс 'Индустрия моды', номинация - Эскизы для модельера. Fashion иллюстрация"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=eskiziModelierTechRisunok" title="Эскизы для модельера. Технический рисунок" description="Конкурс 'Индустрия моды', номинация - Эскизы для модельера. Технический рисунок">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=eskiziModelierTechRisunok" title="Заявка" description="Подача заявки на Конкурс 'Индустрия моды', номинация - Эскизы для модельера. Технический рисунок"/>
+            </siteMapNode>-->
+     
+            <!--<siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=sedobnayaModaFoodArt" title="Съедобная мода. Фуд-арт и fashion-дизайн" description="Конкурс 'Индустрия моды', номинация - Съедобная мода. Фуд-арт и fashion-дизайн">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=sedobnayaModaFoodArt" title="Заявка" description="Подача заявки наКонкурс 'Индустрия моды', номинация - Съедобная мода. Фуд-арт и fashion-дизайн"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=sedobnayaModaOgorod" title="Съедобная мода. Модный огород на подоконнике" description="Конкурс 'Индустрия моды', номинация - Съедобная мода. Модный огород на подоконнике">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=sedobnayaModaOgorod" title="Заявка" description="Подача заявки наКонкурс 'Индустрия моды', номинация - Съедобная мода. Модный огород на подоконнике"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=sedobnayaModaBeauty" title="Съедобная мода. Beauty-меню: блюда с микрозеленью" description="Конкурс 'Индустрия моды', номинация - Съедобная мода. Beauty-меню: блюда с микрозеленью">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=sedobnayaModaBeauty" title="Заявка" description="Подача заявки наКонкурс 'Индустрия моды', номинация - Съедобная мода. Beauty-меню: блюда с микрозеленью"/>
+            </siteMapNode>-->
+            <siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=tmcollectpokaz" title="Театр моды: Коллективный показ" description="Конкурс 'Индустрия моды', номинация - Театр моды: Коллективный показ">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=tmcollectpokaz" title="Заявка" description="Подача заявки на Конкурс 'Индустрия моды', номинация - Театр моды: Коллективный показ"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=tmavtorcollect" title="Театр моды: Авторская коллекция" description="Конкурс 'Индустрия моды', номинация - Театр моды: Авторская коллекция">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=tmavtorcollect" title="Заявка" description="Подача заявки на Конкурс 'Индустрия моды', номинация - Театр моды: Авторская коллекция"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=tmindividpokaz" title="Театр моды: Индивидуальный показ" description="Конкурс 'Индустрия моды', номинация - Театр моды: Индивидуальный показ">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=tmindividpokaz" title="Заявка" description="Подача заявки на Конкурс 'Индустрия моды', номинация - Театр моды: Индивидуальный показ"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=tmnetradicmaterial" title="Театр моды: Коллекция из нетрадиционных материалов" description="Конкурс 'Индустрия моды', номинация - Театр моды: Коллекция из нетрадиционных материалов">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=tmnetradicmaterial" title="Заявка" description="Подача заявки на Конкурс 'Индустрия моды', номинация - Театр моды: Коллекция из нетрадиционных материалов"/>
+            </siteMapNode>
+            <!--<siteMapNode url="~/sections/project/competitionclothes/competitionclothes.aspx?subname=tmissledovproject" title="Театр моды: Исследовательский проект" description="Конкурс 'Индустрия моды', номинация - Театр моды: Исследовательский проект">
+              <siteMapNode url="~/sections/project/competitionclothes/reg.aspx?subname=tmissledovproject" title="Заявка" description="Подача заявки на Конкурс 'Индустрия моды', номинация - Театр моды: Исследовательский проект"/>
+            </siteMapNode>-->
+          </siteMapNode>
+          <siteMapNode url="~/sections/project/competitionkorablik/competitionkorablik.aspx" title="Открытый конкурс 'Кораблик детства'" description="Подраздел - Открытый конкурс 'Кораблик детства'">
+            <siteMapNode url="~/sections/project/competitionkorablik/competitionkorablik.aspx?subname=hudslovo" title="Художественное слово" description="Открытый конкурс 'Кораблик детства', номинация - Художественное слово">
+              <siteMapNode url="~/sections/project/competitionkorablik/reg.aspx?subname=hudslovo" title="Заявка" description="Подача заявки на Конкурс 'Открытый конкурс детства', номинация - Художественное слово"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionkorablik/competitionkorablik.aspx?subname=horeographia" title="Хореография" description="Открытый конкурс 'Кораблик детства', номинация - Хореография">
+              <siteMapNode url="~/sections/project/competitionkorablik/reg.aspx?subname=horeographia" title="Заявка" description="Подача заявки на Творческий конкурс 'Кораблик детства', номинация - Хореография"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionkorablik/competitionkorablik.aspx?subname=vokal" title="Вокал" description="Открытый конкурс 'Кораблик детства', номинация - Вокал">
+              <siteMapNode url="~/sections/project/competitionkorablik/reg.aspx?subname=vokal" title="Заявка" description="Подача заявки на Открытый конкурс 'Кораблик детства', номинация - Вокал"/>
+            </siteMapNode>
+          </siteMapNode>
+           <siteMapNode url="~/sections/project/competitioncrimroute/competitioncrimroute.aspx" title="Конкурс 'Крымские маршруты'" description="Подраздел - Конкурс 'Крымские маршруты'">
+            <siteMapNode url="~/sections/project/competitioncrimroute/competitioncrimroute.aspx?subname=historyplace" title="Исторический Крым" description="Конкурс 'Крымские маршруты', номинация - Исторический Крым">
+              <siteMapNode url="~/sections/project/competitioncrimroute/reg.aspx?subname=historyplace" title="Заявка" description="Подача заявки на Конкурс 'Крымские маршруты', номинация - Исторический Крым"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitioncrimroute/competitioncrimroute.aspx?subname=militaryhistoryplace" title="Героический Крым" description="Конкурс 'Крымские маршруты', номинация - Героический Крым">
+              <siteMapNode url="~/sections/project/competitioncrimroute/reg.aspx?subname=militaryhistoryplace" title="Заявка" description="Подача заявки на Конкурс 'Крымские маршруты', номинация - Героический Крым"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitioncrimroute/competitioncrimroute.aspx?subname=literaturehistoryplace" title="Литературный Крым" description="Конкурс 'Крымские маршруты', номинация - Литературный Крым">
+              <siteMapNode url="~/sections/project/competitioncrimroute/reg.aspx?subname=literaturehistoryplace" title="Заявка" description="Подача заявки на Конкурс 'Крымские маршруты', номинация - Литературный Крым"/>
+            </siteMapNode>
+          </siteMapNode>
+           <siteMapNode url="~/sections/project/competitionmathbattle/competitionmathbattle.aspx" title="Конкурс 'Математический батл'" description="Подраздел - Конкурс 'Математический батл'">
+            <siteMapNode url="~/sections/project/competitionmathbattle/competitionmathbattle.aspx?subname=battle" title="Конкурс 'Математический батл'" description="Конкурс 'Математический батл'">
+              <siteMapNode url="~/sections/project/competitionmathbattle/reg.aspx?subname=battle" title="Заявка" description="Подача заявки на Конкурс 'Математический батл'"/>
+            </siteMapNode>
+          </siteMapNode>
+          <!--<siteMapNode url="~/sections/project/competitionkosmos/competitionkosmos.aspx" title="Квест-игра 'Покоряя космос'" description="Подраздел - Квест-игра 'Покоряя космос'">
+            <siteMapNode url="~/sections/project/competitionkosmos/competitionkosmos.aspx?subname=kosmos" title="Квест-игра 'Покоряя космос'" description="Квест-игра 'Покоряя космос'">
+              <siteMapNode url="~/sections/project/competitionkosmos/reg.aspx?subname=kosmos" title="Заявка" description="Подача заявки на Квест-игру 'Покоряя космос'"/>
+            </siteMapNode>
+          </siteMapNode>-->
+          <!--<siteMapNode url="~/sections/project/competitionscience/competitionscience.aspx" title="Конкурс научных работ 'В моей лаборатории вот что... '" description="Подраздел - Конкурс научных работ 'В моей лаборатории вот что... '">
+            <siteMapNode url="~/sections/project/competitionscience/competitionscience.aspx?subname=ekologia_ochno" title="Экология (очно)" description="Конкурс научных работ 'В моей лаборатории вот что... ', номинация - Экология (очно)">
+              <siteMapNode url="~/sections/project/competitionscience/reg.aspx?subname=ekologia_ochno" title="Заявка" description="Подача заявки на Конкурс научных работ 'В моей лаборатории вот что... ', номинация - Экология (очно)"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionscience/competitionscience.aspx?subname=ekologia_zaochno" title="Экология (заочно)" description="Конкурс научных работ 'В моей лаборатории вот что... ', номинация - Экология (заочно)">
+              <siteMapNode url="~/sections/project/competitionscience/reg.aspx?subname=ekologia_zaochno" title="Заявка" description="Подача заявки на Конкурс научных работ 'В моей лаборатории вот что... ', номинация - Экология (заочно)"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionscience/competitionscience.aspx?subname=himiya_ochno" title="Биология (очно)" description="Конкурс научных работ 'В моей лаборатории вот что... ', номинация - Химия (очно)">
+              <siteMapNode url="~/sections/project/competitionscience/reg.aspx?subname=himiya_ochno" title="Заявка" description="Подача заявки на Конкурс научных работ 'В моей лаборатории вот что... ', номинация - Химия (очно)"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionscience/competitionscience.aspx?subname=himiya_zaochno" title="Биология (заочно)" description="Конкурс научных работ 'В моей лаборатории вот что... ', номинация - Химия (заочно)">
+              <siteMapNode url="~/sections/project/competitionscience/reg.aspx?subname=himiya_zaochno" title="Заявка" description="Подача заявки на Конкурс научных работ 'В моей лаборатории вот что... ', номинация - Химия (заочно)"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionscience/competitionscience.aspx?subname=fizika_ochno" title="Физика (очно)" description="Конкурс научных работ 'В моей лаборатории вот что... ', номинация - Физика (очно)">
+              <siteMapNode url="~/sections/project/competitionscience/reg.aspx?subname=fizika_ochno" title="Заявка" description="Подача заявки на Конкурс научных работ 'В моей лаборатории вот что... ', номинация - Физика (очно)"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionscience/competitionscience.aspx?subname=fizika_zaochno" title="Физика (заочно)" description="Конкурс научных работ 'В моей лаборатории вот что... ', номинация - Физика (заочно)">
+              <siteMapNode url="~/sections/project/competitionscience/reg.aspx?subname=fizika_zaochno" title="Заявка" description="Подача заявки на Конкурс научных работ 'В моей лаборатории вот что... ', номинация - Физика (заочно)"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionscience/competitionscience.aspx?subname=biologiya_ochno" title="Биология (очно)" description="Конкурс научных работ 'В моей лаборатории вот что... ', номинация - Биология (очно)">
+              <siteMapNode url="~/sections/project/competitionscience/reg.aspx?subname=biologiya_ochno" title="Заявка" description="Подача заявки на Конкурс научных работ 'В моей лаборатории вот что... ', номинация - Биология (очно)"/>
+            </siteMapNode>
+            <siteMapNode url="~/sections/project/competitionscience/competitionscience.aspx?subname=biologiya_zaochno" title="Биология (заочно)" description="Конкурс научных работ 'В моей лаборатории вот что... ', номинация - Биология (заочно)">
+              <siteMapNode url="~/sections/project/competitionscience/reg.aspx?subname=biologiya_zaochno" title="Заявка" description="Подача заявки на Конкурс научных работ 'В моей лаборатории вот что... ', номинация - Биология (заочно)"/>
+            </siteMapNode>
+          </siteMapNode>-->
+          <!--<siteMapNode url="~/sections/project/galamoscow/galamoscow.aspx" title="Гала-концерт в Москве" description="Страница Гала-концерт в Москве"/>
+          <siteMapNode url="~/sections/project/galasevastopol/galasevastopol.aspx" title="Гала-концерт в Севастополе" description="Страница Гала-концерт в Севастополе"/>
+          <siteMapNode url="~/sections/project/performances/performances.aspx" title="Выступления на площадках Москвы" description="Страница Выступления на площадках Москвы"/>-->
+          <siteMapNode url="http://quest.sevastopolets-moskva.ru" title="Квест-игра" description="Страница Квест-игры"/>
+          <!--<siteMapNode url="~/sections/project/skypesessions/skypesessions.aspx" title="Скайп-сессии" description="Страница Скайп-сессии"/>-->
+        </siteMapNode>  
+      </siteMapNode>
+
+      <siteMapNode url="~/sections/contacts/contacts.aspx" title="Контакты" description="Страница Контактной информации" />
+      <siteMapNode url="~/sections/partners/partners.aspx" title="Патрнёры" description="Страница информации о наших Партнёрах" />
+      <siteMapNode url="~/sections/sitemap/sitemap.aspx" title="Карта сайта" description="Страница с картой всего сайта" />
+
+    </siteMapNode>
+    
+</siteMap>

@@ -1,0 +1,22 @@
+﻿/*стили относятся к странице working.aspx*/
+body {
+    width: 100%; height: 100%;
+    background-color: #fff;
+}
+.panelWrapper {
+    position: relative; display: block;
+    width: 50%; min-width: 550px;
+    margin: auto;
+    vertical-align: middle; text-align: center;
+    /*border: 1px #000 solid;*/
+}
+.panelWrapper span
+{
+    position: relative;
+    display: block;
+    margin: 50px 0 20px 0;
+    font-family: Cambria;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+}

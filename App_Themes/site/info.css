@@ -1,0 +1,127 @@
+﻿/*стили для кнопок переключения страниц товаров*/
+.tdPageLBtnsMain {
+    position: relative;
+    margin: 10px auto;
+    clear: both;
+}
+.tdPageLBtnsMain td {
+    padding: 4px;
+}
+.spanTxtPageLBtns {
+    font-family: Calibri; font-size: 14px; font-weight: bold; color: #ccc;
+}
+.spanNumPageLBtns {
+    font-family: Calibri; font-size: 14px; font-weight: bold; color: #fff;
+    padding: 0px 5px;
+}
+.spanArrowPageLBtns 
+{
+    padding: 0px 5px;
+    font-family: Calibri; font-size: 16px; font-weight: bold; color: #ccc;
+    text-decoration: none;
+}
+
+/*стили для содержимого страницы новостей (используются в классе NewsForm)*/
+.panelAllWrap {
+    /*position: relative;
+    border: 2px solid #999999; -ms-border-radius: 5px; border-radius: 5px;
+    -webkit-box-shadow: 0 0 16px #999999; -ms-box-shadow: 0 0 16px #999999; box-shadow: 0 0 16px #999999;*/
+}
+.panelOneNewsWrap {
+    position: relative;
+    padding: 5px 10px; margin: 0 0 20px 0;
+
+    -ms-border-radius: 5px; border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 7px #000; -ms-box-shadow: 1px 1px 7px #000; box-shadow: 1px 1px 7px #000;
+    /*border-style: solid;
+    border-width: 1px;
+    border-color: #1A430C #14320A #14320A #1A430C;*/
+    
+    background-color: #454545;
+}
+.panelDatePub {
+    text-align: right;
+}
+.lblPredislovie {
+    position: relative; display: inline-block;
+    padding: 0 4px 0 0;
+    font-family: Calibri; font-size: 12px; color: #fff;
+    /*border: 1px #000 solid;*/
+}
+.lblDateReg {
+    position: relative; display: inline-block;
+    padding: 0 4px 0 0;
+    font-family: Calibri; font-size: 12px; font-weight: bold; color: #E8E8FF;
+    /*border: 1px #000 solid;*/
+}
+.lblTitle {
+    position: relative; display: block;
+    padding: 0px 5px 4px 5px; margin: 7px 0 10px 0;
+    border-bottom: 1px solid #575757; 
+    /*border-top: 1px solid #dcdcdc;*/
+    
+    font-family: bitterbold; font-size: 16px; color: #E8E8FF;
+    text-align: center;
+}
+.newsImage {
+    position: relative; display: inline-block;
+    margin: 0 20px 5px 0;
+    width: 100px;
+    vertical-align: top;
+    -webkit-box-shadow: 1px 1px 4px #000; -ms-box-shadow: 1px 1px 4px #000; box-shadow: 1px 1px 4px #000;
+}
+.panelDescrShort {
+    position: relative; display: inline-block;
+    margin: 0 0 10px 0;
+    width: 900px;
+    vertical-align: top; text-align: justify;
+}
+.lblDescrShort {
+    padding: 0 4px 0 0;
+    font-family: bitterregular; font-size: 14px; color: #ccc; 
+}
+.lblSubTitle {
+    position: relative; display: block;
+    padding: 4px 5px 4px 5px; margin: 10px 0 7px 0;
+    border-top: 1px solid #575757;
+    
+    font-family: bitterregular; font-size: 14px; color: #E8E8FF;
+    text-align: left;
+}
+.newsFileA {    /*стиль для гиперссылки на файл новости*/
+    margin: 0 5px 0 10px
+}
+.lBtnMoreInfo {
+    position: relative; display: block;
+}
+/*Стили для одного комментария*/
+.panelCommWrap {
+    position: relative;
+    padding: 10px; margin: 15px 0 0 0;
+    /*border: 1px solid #ccc;*/
+    -ms-border-top-left-radius: 10px; border-top-left-radius: 10px;
+    -ms-border-bottom-right-radius: 10px; border-bottom-right-radius: 10px;
+    -webkit-box-shadow: 1px 1px 4px #000000;
+    -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.9);
+    -ms-box-shadow: 1px 1px 4px #000000;
+    -ms-box-shadow: 1px 1px 4px rgba(0,0,0,0.9);
+    box-shadow: 1px 1px 4px #000000;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.9);
+    
+    background-color: #5c5c5c;
+}
+
+.lblCommText {
+    padding: 0 4px 0 0;
+    font-family: bitteritalic; font-size: 12px; color: #ccc; 
+}
+.lblCommPredislovie {
+    position: relative; display: inline-block;
+    padding: 0 4px 0 0;
+    font-family: Calibri; font-size: 10px; color: #fff;
+}
+.lblCommDateReg {
+    position: relative; display: inline-block;
+    padding: 0 4px 0 0;
+    font-family: Calibri; font-size: 10px; font-weight: bold; color: #E8E8FF;
+}

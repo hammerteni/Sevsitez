@@ -1,0 +1,117 @@
+﻿/*Для класса CallbacksForm. Используется на странице guestbook.aspx*/
+.cb_divMainWrap {
+    
+}
+.cb_mainTitle {
+    position: relative;
+    text-align: center;
+    font-size: 24px;font-weight: bold; color: #edc66c;
+    margin: 5px 0 30px 0;padding: 0 0 10px 0;
+    border-bottom: 1px #696767 solid;
+}
+.cb_noCallbacks {
+    position: relative;display: inline-block;
+    font-size: 18px;font-style: italic; color: #ffffff;
+}
+.cb_divMainOne {
+    position: relative;
+    width: 750px;
+    margin: 0 0 20px 55px;
+}
+
+.cb_divUserTxt {
+    position: relative;
+    padding: 5px 10px 5px 10px;
+    background-color: #ecdcab;
+    
+    -ms-border-radius: 4px;border-radius: 4px;
+
+    font-size: 14px;font-style: italic;color: #2d2d2d;
+
+    -webkit-box-shadow: 1px 1px 5px 0px #000000;-webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 1px 1px 5px 0px #000000;-moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 1);
+    -o-box-shadow: 1px 1px 5px 0px #000000;-o-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 1);
+    -ms-box-shadow: 1px 1px 5px 0px #000000;-ms-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 1px 1px 5px 0px #000000;box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 1);
+}
+
+.cb_divUserData {
+    margin: 4px 0 0px 0;
+    text-align: right;
+    font-size: 12px;color: #ecdcab;
+}
+.cb_spanPre {
+    position: relative;display: inline-block;
+    padding: 0 5px 0 0;
+}
+.cb_spanData {
+    position: relative;display: inline-block;
+    padding: 0 5px 0 0;
+    color: #e9e9e9;
+}
+.cb_divAdmTxt {
+    position: relative;
+    width: 500px;
+    margin: 0 0 0 330px;
+    padding: 5px 10px 5px 10px;
+    background-color: #f8f2de;
+    
+    -ms-border-radius: 4px;border-radius: 4px;
+
+    font-size: 14px;font-style: italic;color: #2d2d2d;
+
+    -webkit-box-shadow: 1px 1px 5px 0px #000000;-webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 1px 1px 5px 0px #000000;-moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 1);
+    -o-box-shadow: 1px 1px 5px 0px #000000;-o-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 1);
+    -ms-box-shadow: 1px 1px 5px 0px #000000;-ms-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 1px 1px 5px 0px #000000;box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 1);
+}
+
+.cb_btnSendCallback {
+    position: relative;display: block;
+    width: 200px;
+    padding: 7px 20px 7px 20px; margin: 30px auto 10px auto;
+    cursor: pointer;
+
+    text-align: center;
+    font-size: 20px; color: #ffffff;
+    -ms-text-shadow: 1px 1px 1px #000000;-ms-text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 1px #000000;text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e9d086+0,bd9316+100 */
+    background: rgb(233,208,134); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U5ZDA4NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiZDkzMTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  rgba(233,208,134,1) 0%, rgba(189,147,22,1) 100%); /* FF3.6-15 */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(233,208,134,1)), color-stop(100%,rgba(189,147,22,1))); /* Chrome4-9,Safari4-5 */
+    background: -webkit-linear-gradient(top,  rgba(233,208,134,1) 0%,rgba(189,147,22,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -o-linear-gradient(top,  rgba(233,208,134,1) 0%,rgba(189,147,22,1) 100%); /* Opera 11.10-11.50 */
+    background: -ms-linear-gradient(top,  rgba(233,208,134,1) 0%,rgba(189,147,22,1) 100%); /* IE10 preview */
+    background: linear-gradient(to bottom,  rgba(233,208,134,1) 0%,rgba(189,147,22,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9d086', endColorstr='#bd9316',GradientType=0 ); /* IE6-8 */
+
+    -ms-border-radius: 4px;border-radius: 4px;
+    border-top: 2px #ffffff solid;
+    border-left: 2px #ffffff solid;
+    border-bottom: 2px #e6e6e6 solid;
+    border-right: 2px #e6e6e6 solid;
+    
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+}
+
+.cb_btnSendCallback:hover {
+    -webkit-box-shadow: 0px 0px 12px 0px #ffffff;-webkit-box-shadow: 0px 0px 12px 0px rgba(238, 198, 108, 1);
+    -moz-box-shadow: 0px 0px 12px 0px #ffffff;-moz-box-shadow: 0px 0px 12px 0px rgba(238, 198, 108, 1);
+    -o-box-shadow: 0px 0px 12px 0px #ffffff;-o-box-shadow: 0px 0px 12px 0px rgba(238, 198, 108, 1);
+    -ms-box-shadow: 0px 0px 12px 0px #ffffff;-ms-box-shadow: 0px 0px 12px 0px rgba(238, 198, 108, 1);
+    box-shadow: 0px 0px 12px 0px #ffffff;box-shadow: 0px 0px 12px 0px rgba(238, 198, 108, 1);
+    
+    border-top: 2px #ffffff solid;
+    border-left: 2px #ffffff solid;
+    border-bottom: 2px #ffffff solid;
+    border-right: 2px #ffffff solid;
+}
